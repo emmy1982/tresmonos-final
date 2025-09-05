@@ -1,0 +1,526 @@
+/* ===== TATTOOS GALLERY STYLES ===== */
+
+/* Hero Section for Tattoos Page */
+.tattoos-hero {
+    height: 60vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: 
+        linear-gradient(135deg, rgba(26, 26, 26, 0.8) 0%, rgba(45, 45, 45, 0.6) 50%, rgba(26, 26, 26, 0.8) 100%),
+        url('../assets/img/IMG_3905.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.tattoos-hero .hero-content {
+    text-align: center;
+    color: var(--nav-text);
+    z-index: 2;
+    position: relative;
+    margin-top: 10px;
+}
+
+.space {
+    letter-spacing: -1px;
+}
+
+.tattoos-hero h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.tattoos-hero p {
+    font-size: 1.6rem;
+    font-weight: 100;
+    max-width: 500px;
+    margin-top: -40px;
+    max-width: 600px;
+}
+
+
+/* Gallery Section */
+.tattoos-gallery-section {
+    padding: 4rem 0;
+    background: var(--light-color);
+}
+
+.gallery-category {
+    margin-bottom: 0;
+    padding: 4rem 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+/* Fondos alternados para cada categoría */
+.gallery-category:nth-child(odd) {
+    background: var(--light-color);
+}
+
+.gallery-category:nth-child(even) {
+    background: var(--dark-color);
+}
+
+/* Categorías específicas */
+#realismo {
+    margin-top: -100px;
+    background: var(--light-color);
+}
+
+#blackwork {
+    background: var(--dark-color);
+}
+
+#anime {
+    background: var(--light-color);
+}
+
+#ornamental {
+    background: var(--dark-color);
+}
+
+#cover {
+    background: var(--light-color);
+}
+
+#linea-fina {
+    background: var(--dark-color);
+}
+
+.category-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+.category-title h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+
+/* Colores de título según el fondo */
+.gallery-category:nth-child(odd) .category-title h2 {
+    color: var(--secondary-color);
+}
+
+.gallery-category:nth-child(even) .category-title h2 {
+    color: var(--light-color);
+}
+
+/* Colores específicos por categoría */
+#realismo .category-title h2,
+#anime .category-title h2,
+#cover .category-title h2 {
+    color: var(--secondary-color);
+}
+
+#blackwork .category-title h2,
+#ornamental .category-title h2,
+#linea-fina .category-title h2 {
+    color: var(--light-color);
+}
+
+.category-title .separator {
+    width: 200px;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 0 auto;
+}
+
+/* Separador siempre dorado para contraste */
+.gallery-category:nth-child(odd) .category-title .separator,
+.gallery-category:nth-child(even) .category-title .separator {
+    background: var(--primary-color);
+}
+
+/* Gallery Grid */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.5rem;
+    padding: 0 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.category-name {
+    color: var(--primary-color);
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover .category-name {
+    transform: scale(1);
+}
+
+/* CTA Section */
+.gallery-cta {
+    padding: 0 0 4rem 0;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+
+.cta-content p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Custom Lightbox Styles */
+.lightbox-modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: fadeIn 0.3s ease;
+}
+
+.lightbox-modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lightbox-content img {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    box-shadow: 0 10px 30px rgba(17, 17, 17, 0.9);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    color: var(--primary-color);
+    font-size: 40px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10001;
+}
+
+.lightbox-close:hover {
+    background-color: transparent;
+    transform: scale(1.3);
+}
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.lightbox-prev,
+.lightbox-next {
+    background: transparent;
+    border: none;
+    color: var(--primary-color);
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    pointer-events: all;
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); */
+}
+
+.lightbox-prev {
+    margin-left: -85px;
+}
+
+.lightbox-next {
+    margin-right: -85px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background: var(--dark-color);
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .tattoos-hero h1 {
+        font-size: 3rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .gallery-item img {
+        height: 250px;
+    }
+    
+    /* Lightbox para tablets */
+    .lightbox-prev {
+        margin-left: -50px;
+    }
+    
+    .lightbox-next {
+        margin-right: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .tattoos-gallery-section .container {
+        padding: 0.3rem;
+    }
+
+    .tattoos-hero {
+        height: 30vh;
+        background-attachment: scroll;
+    }
+    
+    .tattoos-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .tattoos-hero p {
+        font-size: 1rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.3rem;
+        padding: 0 0.3rem;
+    }
+    
+    .gallery-item img {
+        height: 450px;
+    }
+    
+    .category-title h2 {
+        font-size: 3rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+    
+    /* Lightbox responsive */
+    .lightbox-content {
+        max-width: 98%;
+        max-height: 98%;
+    }
+    
+    .lightbox-content img {
+        height: 700px;
+        object-fit: cover;
+
+    }
+
+    .lightbox-close {
+        top: -80px;
+        right: 0;
+        font-size: 60px;
+        width: 80px;
+        height: 80px;
+        background: transparent;
+    }
+    
+    .lightbox-prev,
+    .lightbox-next {
+        width: 80px;
+        height: 80px;
+        font-size: 40px;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 0;
+    }
+    
+    .lightbox-prev {
+        margin-left: 10px;
+    }
+    
+    .lightbox-next {
+        margin-right: 10px;
+    }
+    
+    
+}
+
+@media (max-width: 480px) {
+    
+    
+    /* .gallery-item img {
+        height: 250px;
+    } */
+    
+    
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    /* Lightbox para pantallas muy pequeñas */
+    /* .lightbox-content {
+        max-width: 98%;
+        max-height: 98%;
+    }
+    
+    .lightbox-content img {
+        max-height: 90vh;
+    } */
+    
+    /* .lightbox-close {
+        top: -35px;
+        right: 5px;
+        font-size: 25px;
+        width: 35px;
+        height: 35px;
+    }
+    
+    .lightbox-prev,
+    .lightbox-next {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+    
+    .lightbox-prev {
+        margin-left: 5px;
+    }
+    
+    .lightbox-next {
+        margin-right: 5px;
+    } */
+    
+    
+}
+
+/* Animation for category switching */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.gallery-category.show {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Loading animation */
+.gallery-item {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.gallery-item:nth-child(1) { animation-delay: 0.1s; }
+.gallery-item:nth-child(2) { animation-delay: 0.2s; }
+.gallery-item:nth-child(3) { animation-delay: 0.3s; }
+.gallery-item:nth-child(4) { animation-delay: 0.4s; }
+.gallery-item:nth-child(5) { animation-delay: 0.5s; }
+.gallery-item:nth-child(6) { animation-delay: 0.6s; }

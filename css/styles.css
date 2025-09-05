@@ -113,7 +113,7 @@ section {
     visibility: hidden;
     transform: translateY(20px);
     z-index: 999;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(1px);
     border: 1px solid var(--primary-color);
 }
 
@@ -124,9 +124,7 @@ section {
 }
 
 .scroll-to-top:hover {
-    background: linear-gradient(135deg, #b8941f, #e6c547);
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
 }
 
 .scroll-to-top:active {
@@ -624,7 +622,7 @@ section {
 .scroll-down {
     position: absolute;
     bottom: 20px;
-    right: -15px;
+    right: 10%;
     transform: translateX(-50%);
     z-index: 100;
     /* animation: bounce 2s infinite; */
@@ -1513,7 +1511,7 @@ section {
 
 /* Slider de Camisetas */
 .tshirt-slider-container {
-    margin-top: 60px;
+    margin-top: 80px;
     background: var(--secondary-color);
     padding: 80px 20px;
 }
@@ -1663,6 +1661,10 @@ section {
 
 /* Responsive para el slider */
 @media (max-width: 768px) {
+    .custom-brand-section {
+        margin-top: -80px;
+    }
+
     .tshirt-slider-container {
         padding: 40px 15px;
     }
@@ -2677,6 +2679,19 @@ footer::before {
 }
 
 @media (max-width: 768px) {
+    .scroll-down {
+       
+        right: -15px;
+        
+        /* animation: bounce 2s infinite; */
+        
+    }
+
+    .whatsapp-btn {
+        bottom: 20px;
+        left: 15px;
+     }
+
     .social-header {
         display: none;
     }

@@ -227,7 +227,7 @@
 
 .cta-content h2 {
     font-family: 'Oswald', sans-serif;
-    font-size: 4rem;
+    font-size: 5rem;
     color: var(--dark-color);
     margin-bottom: 1rem;
     letter-spacing: -2px;
@@ -387,7 +387,8 @@
     }
     
     .tattoos-hero p {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        max-width: 300px;
     }
     
     .gallery-grid {
@@ -404,8 +405,12 @@
         font-size: 3rem;
     }
     
+   
     .cta-content h2 {
-        font-size: 2rem;
+        font-size:4rem;
+        line-height: 1.1;
+    
+    
     }
     
     /* Lightbox responsive */
@@ -457,9 +462,9 @@
     } */
     
     
-    .cta-content h2 {
+    /* .cta-content h2 {
         font-size: 1.8rem;
-    }
+    } */
     
     /* Lightbox para pantallas muy pequeñas */
     /* .lightbox-content {

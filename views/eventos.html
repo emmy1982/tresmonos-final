@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos y Bodas | Tres Monos Ink</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Oswald:wght@400;500;700&family=Permanent+Marker&family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/eventos.css">
+</head>
+<body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/+34600000000" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="nav-left">
+                <a href="../index.html" class="nav-link">INICIO</a>
+                <a href="tattoos.html" class="nav-link">TATTOOS</a>
+                <a href="../index.html#about" class="nav-link">ARTISTAS</a>
+            </div>
+            
+            <div class="nav-center">
+                <a href="../index.html" class="">
+                    <img src="../assets/img/logomono.png" alt="Tres Monos Ink">
+                </a>
+            </div>
+            
+            <div class="nav-right">
+                <a href="estudio.html" class="nav-link">EL ESTUDIO</a>
+                <a href="eventos.html" class="nav-link active">EVENTOS</a>
+                <a href="contacto.html" class="nav-link">CONTACTO</a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <img src="../assets/img/logomono.png" alt="Tres Monos Ink" class="mobile-logo">
+            <div class="mobile-menu-close">
+                <span>&times;</span>
+            </div>
+        </div>
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-links">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="tattoos.html">TATTOOS</a></li>
+                <li><a href="../index.html#about">ARTISTAS</a></li>
+                <li><a href="estudio.html">EL ESTUDIO</a></li>
+                <li><a href="eventos.html">EVENTOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-social">
+            <h3>Síguenos</h3>
+            <div class="mobile-social-icons">
+                <a href="https://facebook.com/" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com/" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://tiktok.com/" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+        <div class="mobile-cta">
+            <a href="contacto.html" class="mobile-cta-button">
+                PEDIR CITA
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="events-hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1>EVENTOS <strong class="text-strong-3-light">Y BODAS</strong></h1>
+            <p>¡Haz que tu celebración sea única!</p>
+            <a href="contacto.html" class="cta-button">Solicitar información</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="events-services">
+        <div class="container">
+            <div class="section-title">
+                <p><span class="text-strong-2">NUESTROS</span> <span class="text-strong-3">SERVICIOS</span></p>
+                <div class="separator"></div>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Bodas</h3>
+                    <p>Hacemos tu boda inolvidable con tatuajes personalizados para ti y tus invitados. Desde tatuajes temporales hasta permanentes, creamos momentos únicos.</p>
+                    <ul>
+                        <li>Tatuajes temporales para invitados</li>
+                        <li>Tatuajes permanentes para novios</li>
+                        <li>Diseños personalizados</li>
+                        <li>Equipo móvil completo</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Eventos Privados</h3>
+                    <p>Celebra tu cumpleaños, aniversario o cualquier evento especial con nuestros servicios de tatuaje móvil. Llevamos el estudio hasta ti.</p>
+                    <ul>
+                        <li>Cumpleaños temáticos</li>
+                        <li>Aniversarios</li>
+                        <li>Despedidas de soltero/a</li>
+                        <li>Eventos corporativos</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Eventos Públicos</h3>
+                    <p>Participamos en ferias, festivales y eventos públicos ofreciendo tatuajes temporales y permanentes para todos los asistentes.</p>
+                    <ul>
+                        <li>Festivales de música</li>
+                        <li>Ferias locales</li>
+                        <li>Eventos deportivos</li>
+                        <li>Convenciones</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="events-process">
+        <div class="container">
+            <div class="section-title">
+                <p><span class="text-strong-2-light">CÓMO</span> <span class="text-strong-3-light">FUNCIONA</span></p>
+                <div class="separator"></div>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Consulta</h3>
+                        <p>Contacta con nosotros para discutir tu evento, fecha, ubicación y tipo de tatuajes que deseas.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Presupuesto</h3>
+                        <p>Te enviamos un presupuesto personalizado basado en tus necesidades específicas y número de invitados.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Diseño</h3>
+                        <p>Creamos diseños únicos para tu evento o trabajamos con tus ideas para hacerlas realidad.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Evento</h3>
+                        <p>Llegamos a tu evento con todo el equipo necesario y hacemos que tu celebración sea inolvidable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="events-gallery">
+        <div class="container">
+            <div class="section-title">
+                <p><span class="text-strong-2">GALERÍA DE</span> <span class="text-strong-3">EVENTOS</span></p>
+                <div class="separator"></div>
+            </div>
+            
+            <div class="simple-gallery">
+                <div class="gallery-item">
+                    <img src="../assets/img/fotoGalery.jpg" alt="Evento con tatuajes">
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/img/fotoGalery1.jpg" alt="Evento con tatuajes">
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/img/fotoGalery3.jpg" alt="Evento con tatuajes">
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/img/fotoGalery4.jpg" alt="Evento con tatuajes">
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/img/fotoGalery5.jpg" alt="Evento con tatuajes">
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/img/fotoGalery6.jpg" alt="Evento con tatuajes">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA Section -->
+    <section class="events-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para hacer <strong class="text-strong-3">tu evento inolvidable?</strong></h2>
+                <p>Contacta con nosotros y haremos que tu celebración sea única con nuestros servicios de tatuaje móvil.</p>
+                <div class="cta">
+                    <a href="contacto.html" class="cta-button-dark">Solicitar información</a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <a href="../index.html">
+                           <img src="../assets/img/logomono.png" alt="Tres Monos Ink">
+                        </a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Datos de contacto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p>Av. de Andalucía 84, Atarfe, Granada</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p>+34 600 000 000</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p>info@tresmonosink.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <p>Lunes a Viernes: <br> 10:00 - 20:00</p>
+                            <p>Sábado: 10:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="tattoos.html">Tatuajes personalizados</a></li>
+                        <li><a href="tattoos.html">Cover-ups</a></li>
+                        <li><a href="eventos.html">Tatuajes para eventos</a></li>
+                        <li><a href="tattoos.html">Diseños personalizados</a></li>
+                        <li><a href="contacto.html">Cuidados del tatuaje</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Suscríbete</h3>
+                    <p>Recibe nuestras últimas novedades y promociones especiales</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico">
+                        <button type="submit" class="btn btn-secondary">Suscribir</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 Tres Monos Ink. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/scroll-to-top.js"></script>
+    <script src="../js/eventos.js"></script>
+</body>
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Tatuajes | Tres Monos Ink</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Oswald:wght@400;500;700&family=Permanent+Marker&family=The+Nautigal:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/tattoos-gallery.css">
+    <link rel="stylesheet" href="../css/estudio.css">
+</head>
+
+<body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/+34600000000" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="nav-left">
+                <a href="../index.html" class="nav-link">INICIO</a>
+                <a href="#gallery" class="nav-link">TRABAJOS</a>
+                <a href="../views/artistas.html" class="nav-link">ARTISTAS</a>
+            </div>
+
+            <div class="nav-center">
+                <a href="../index.html">
+                    <img src="../assets/img/logomono.png" alt="Tres Monos Ink">
+                </a>
+            </div>
+
+            <div class="nav-right">
+                <a href="../views/estudio.html" class="nav-link">EL ESTUDIO</a>
+                <a href="#events" class="nav-link">EVENTOS</a>
+                <a href="#contact" class="nav-link">CONTACTO</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <img src="../assets/img/logomono.png" alt="Tres Monos Ink" class="mobile-logo">
+            <div class="mobile-menu-close">
+                <span>&times;</span>
+            </div>
+        </div>
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-links">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="#gallery">TRABAJOS</a></li>
+                <li><a href="../views/artistas.html">NOSOTROS</a></li>
+                <li><a href="../views/estudio.html">EL ESTUDIO</a></li>
+                <li><a href="#events">EVENTOS</a></li>
+                <li><a href="#contact">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-social">
+            <h3>Síguenos</h3>
+            <div class="mobile-social-icons">
+                <a href="https://facebook.com/" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com/" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://tiktok.com/" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+        <div class="mobile-cta">
+            <a href="#appointment" class="mobile-cta-button">
+                PEDIR CITA
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="tattoos-hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1>EL <strong class="text-strong-3-light space">ESTUDIO</strong></h1>
+            <p>Descubre nuestro estudio y todo lo que te ofrecemos</p>
+        </div>
+    </section>
+
+    <!-- Nuestros Servicios -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-title">
+                <p><span class="text-strong-2">NUESTROS</span> <span class="text-strong-3">SERVICIOS</span></p>
+                <div class="separator"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="../assets/img/11.svg" alt="">
+                    <div class="service-item-content">
+                        <h3>Tatuajes</h3>
+                        <p>Diseños únicos creados a partir de tus ideas</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <img src="../assets/img/4.svg" alt="">
+                    <div class="service-item-content">
+                        <h3>Todos los estilos</h3>
+                        <p>Realismo, tradicional, minimalista, geométrico, lettering, blackwork y mucho más</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <img src="../assets/img/25.svg" alt="">
+                    <div class="service-item-content">
+                        <h3>Piercings</h3>
+                        <p>Asesoramiento en todo tipo de perforaciones con materiales de máxima calidad</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img src="../assets/img/45.svg" alt="">
+                    <div class="service-item-content">
+                        <h3>Cover-ups</h3>
+                        <p>Transformamos tatuajes antiguos y le damos una nueva vida</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <img src="../assets/img/36.svg" alt="">
+                    <div class="service-item-content">
+                        <h3>Asesoramiento y cuidados</h3>
+                        <p>Te acompañamos desde la elección del diseño hasta los cuidados posteriores para asegurar la
+                            mejor cicatrización</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <img src="../assets/img/38.svg" alt="">
+                    <div class="service-item-content">
+                        <h3>Tienda</h3>
+                        <p>Además de tatuajes y piercings, contamos con una tienda donde encontrarás camisetas
+                            exclusivas, piercings, tarjetas regalo y mucho más</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Imagen Estudio -->
+    <section class="studio-img">
+        <div class="container ">
+            <div class="section-title studio-img-content">
+                <h2><span class="text-strong-2-light">VISITA</span> <span class="text-strong-3-light">NUESTRO
+                        ESTUDIO</span></h2>
+                <p class="studio-img-text">Estamos aquí para ayudarte a crear el tatuaje perfecto</p>
+                <a href="#appointment" class="cta-button btn-up">Reserva tu cita</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tienda -->
+    <section class="store-section">
+        <div class="container">
+            <div class="section-title">
+                <p><span class="text-strong-2-light">NUESTRA</span> <span class="text-strong-3-light">TIENDA</span></p>
+                <div class="separator"></div>
+            </div>
+            <div class="store-content">
+                <div class="store-text">
+                    <h2>Descubre nuestras camisetas personalizadas de <strong class="bold">TresMonosInk</strong></h2>
+                    <p>
+                        Elige tu camiseta y marca tu estilo, diseños inspirados en tatuajes y estilo urbano. No te
+                        quedes sin la tuya.
+                    </p>
+                </div>
+                <div class="store-image">
+                    <!-- Slider de Camisetas -->
+                    <div class="tshirt-slider-container">
+                        <div class="swiper tshirtSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="tshirt-product">
+                                        <div class="tshirt-image">
+                                            <img src="../assets/img/cami1.png" alt="Camiseta Death">
+                                        </div>
+                                        <div class="tshirt-info">
+                                            <h4>CAMISETA BLANCA</h4>
+                                            <p class="product-type">PRODUCT DEFAULT</p>
+                                            <p class="price">€118.00</p>
+                                            <a href="#appointment" class="cta-button-dark btn-up">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tshirt-product">
+                                        <div class="tshirt-image">
+                                            <img src="../assets/img/cami2.png" alt="Camiseta The Lovers">
+                                        </div>
+                                        <div class="tshirt-info">
+                                            <h4>CAMISETA NEGRA</h4>
+                                            <p class="product-type">PRODUCT GALLERY</p>
+                                            <p class="price">€115.00</p>
+                                            <a href="#appointment" class="cta-button-dark btn-up">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tshirt-product">
+                                        <div class="tshirt-image">
+                                            <img src="../assets/img/cami3.png" alt="Camiseta The Sun">
+                                        </div>
+                                        <div class="tshirt-info">
+                                            <h4>CAMISETA NEGRA</h4>
+                                            <p class="product-type">PRODUCT CUSTOM LAYOUT</p>
+                                            <p class="price">€135.00</p>
+                                            <a href="#appointment" class="cta-button-dark btn-up">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tshirt-product">
+                                        <div class="tshirt-image">
+                                            <img src="../assets/img/cami4.png" alt="Camiseta Exclusive">
+                                        </div>
+                                        <div class="tshirt-info">
+                                            <h4>CAMISETA NEGRA</h4>
+                                            <p class="product-type">PRODUCT CUSTOM HEADER</p>
+                                            <p class="price">€49.00</p>
+                                            <a href="#appointment" class="cta-button-dark btn-up">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Navegación del slider -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- Paginación -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Piercings y accesorios -->
+         <div class="piercings-content piercings-content-1">
+            <div class="piercings-text">
+                <h2>Descubre nuestros piercings y accesorios</h2>
+                <div class="separator piercings-separator"></div>
+                <p>En nuestro estudio no solo realizamos perforaciones con la máxima higiene, sino que también ponemos a
+                    tu disposición una cuidada selección de accesorios.
+                    Trabajamos con materiales de alta calidad como titanio o acero quirúrgico. <br>
+
+                    Además de accesorios y complementos que reflejan tu estilo personal.</p>
+            </div>
+
+            <div class="piercings-image"></div>
+        </div>
+
+        <!-- Tarjetas regalo -->
+         <div class="piercings-content piercings-content-2">
+            <div class="piercings-image-card">
+                <img src="../assets/img/tarjetaRegalo.png" alt="imagen de tarjetas regalo" width="1300" height="800">
+            </div>
+
+            <div class="piercings-text">
+                <h2>Tarjetas regalo</h2>
+                <div class="separator piercings-separator"></div>
+                <p>Si quieres regalar un tatuaje, piercing o camiseta, puedes hacerlo aquí, es tu oportunidad hacer un
+                    regalo especial y para toda la vida.
+                    <br>
+                    Visita nuestro estudio y descubre lo que tenemos para ti.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Podcast -->    
+    <section class="podcast-section">
+        <div class="container">
+            <div class=" podcast-section-title">
+                <h2><span class="text-strong-2">PODCAST</span> <span class="text-strong-3">DE TRESMONOSINK</span></h2>
+                <div class="separator podcast-separator"></div>
+                <p>En nuestro estudio también compartimos ideas, experiencias y cultura a través de nuestro podcast Monos Salvajes. Además, producimos y presentamos videos para que puedas conocernos más de cerca y disfrutar de nuestro contenido exclusivo.</p>
+            </div>
+            <div class="podcast-grid">
+                <div class="podcast-episode">
+                    <div class="episode-thumbnail">
+                        <div class="play-button">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                    <div class="episode-info">
+                        <h3>Episodio 1 - Monos Salvajes</h3>
+                    </div>
+                </div>
+                
+                <div class="podcast-episode">
+                    <div class="episode-thumbnail">
+                        <div class="play-button">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                    <div class="episode-info">
+                        <h3>Episodio 2 - Monos Salvajes</h3>
+                    </div>
+                </div>
+                
+                <div class="podcast-episode">
+                    <div class="episode-thumbnail">
+                        <div class="play-button">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                    <div class="episode-info">
+                        <h3>Episodio 3 - Monos Salvajes</h3>
+                    </div>
+                </div>
+                <div class="podcast-episode">
+                    <div class="episode-thumbnail">
+                        <div class="play-button">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                    <div class="episode-info">
+                        <h3>Episodio 4 - Monos Salvajes</h3>
+                    </div>
+                </div>
+                <div class="podcast-episode">
+                    <div class="episode-thumbnail">
+                        <div class="play-button">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                    <div class="episode-info">
+                        <h3>Episodio 5 - Monos Salvajes</h3>
+                    </div>
+                </div>
+                <div class="podcast-episode">
+                    <div class="episode-thumbnail">
+                        <div class="play-button">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                    <div class="episode-info">
+                        <h3>Episodio 6 - Monos Salvajes</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="../assets/img/logomono.png" alt="Tres Monos Ink">
+                        </a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Datos de contacto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p>Calle Principal 123, 28001 Madrid</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p>+34 600 000 000</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p>info@tresmonosink.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <p>Lunes a Viernes: <br> 10:00 - 20:00</p>
+                            <p>Sábado: 10:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="#">Tatuajes personalizados</a></li>
+                        <li><a href="#">Cover-ups</a></li>
+                        <li><a href="#">Tatuajes para eventos</a></li>
+                        <li><a href="#">Diseños personalizados</a></li>
+                        <li><a href="#care">Cuidados del tatuaje</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Suscríbete</h3>
+                    <p>Recibe nuestras últimas novedades y promociones especiales</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico">
+                        <button type="submit" class="btn btn-secondary">Suscribir</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 Tres Monos Ink. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <div class="lightbox-nav">
+                <button class="lightbox-prev" id="lightbox-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="lightbox-next" id="lightbox-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <img id="lightbox-image" src="#" alt="Imagen de tatuaje">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/tattoos-gallery.js"></script>
+    <script src="../js/scroll-to-top.js"></script>
+    <script>
+        // Initialize Swiper for T-shirt Slider - Copiado exacto del index
+        const tshirtSwiper = new Swiper(".tshirtSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".tshirtSwiper .swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".tshirtSwiper .swiper-button-next",
+                prevEl: ".tshirtSwiper .swiper-button-prev",
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            effect: 'slide',
+            speed: 800,
+            grabCursor: true,
+            keyboard: {
+                enabled: true,
+            },
+            mousewheel: {
+                forceToAxis: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                }
+            }
+        });
+
+        // Pause autoplay on hover for t-shirt slider
+        const tshirtContainer = document.querySelector('.tshirtSwiper');
+        if (tshirtContainer) {
+            tshirtContainer.addEventListener('mouseenter', function () {
+                tshirtSwiper.autoplay.stop();
+            });
+
+            tshirtContainer.addEventListener('mouseleave', function () {
+                tshirtSwiper.autoplay.start();
+            });
+        }
+    </script>
+</body>
+
+</html>

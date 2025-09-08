@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         .swiper-pagination-bullet {
-            background: rgba(255, 255, 255, 0.5);
+            background: rgb(255, 255, 255);
             opacity: 1;
             transition: all 0.3s ease;
         }

@@ -7,7 +7,7 @@
 /* Hero Section */
 .events-hero {
     position: relative;
-    height: 60vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,7 +28,7 @@
         rgba(45, 45, 45, 0.6) 50%,
         rgba(26, 26, 26, 0.8) 100%
       ), 
-                url('../assets/img/chicoTatuando.png') center/cover no-repeat;
+                url('../assets/img/witoantigua.png') center/cover no-repeat;
     z-index: -1;
 }
 
@@ -49,7 +49,7 @@
     padding: 0 20px;
 }
 
-.events-hero h1 {
+.events-h1 h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 4rem;
     font-weight: 700;
@@ -60,7 +60,6 @@
 .hero-content-p {
     font-size: 1.3rem;
     font-weight: 300;
-    padding-top: 30px;
 }
 
 /* Services Section */

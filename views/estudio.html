@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Oswald:wght@400;500;700&family=Permanent+Marker&family=The+Nautigal:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@400;500;700&family=Oswald:wght@400;500;700&family=Permanent+Marker&family=The+Nautigal:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/styles.css">
@@ -74,6 +74,7 @@
                 <li><a href="../views/estudio.html">EL ESTUDIO</a></li>
                 <li><a href="../views/eventos.html">EVENTOS</a></li>
                 <li><a href="./contacto.html">CONTACTO</a></li>
+                <li><a href="../views/estudio.html#podcast">PODCAST</a></li>
             </ul>
         </nav>
         <div class="mobile-social">
@@ -103,12 +104,13 @@
 
     <!-- Hero Section -->
     <section class="tattoos-hero">
-        <div class="hero-background">
+        <div class="hero-background image-background">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
-            <h1>EL <strong class="text-strong-3-light space">ESTUDIO</strong></h1>
+            <h1><strong class="text-strong-2-light">EL</strong> <strong class="text-strong-3-light space">ESTUDIO</strong></h1>
             <p>Descubre nuestro estudio y todo lo que te ofrecemos</p>
+            <a href="../index.html#appointment" class="cta-button">PEDIR CITA</a>
         </div>
     </section>
 
@@ -116,7 +118,7 @@
     <section class="services-section">
         <div class="container">
             <div class="section-title">
-                <p><span class="text-strong-2">NUESTROS</span> <span class="text-strong-3">SERVICIOS</span></p>
+                <h2><span class="text-strong-2">NUESTROS</span> <span class="text-strong-3">SERVICIOS</span></h2>
                 <div class="separator"></div>
             </div>
             <div class="services-grid">
@@ -188,7 +190,8 @@
     <section class="store-section">
         <div class="container">
             <div class="section-title">
-                <p><span class="text-strong-2-light">NUESTRA</span> <span class="text-strong-3-light">TIENDA</span></p>
+                <h2><span class="text-strong-2">NUESTRA</span> <span class="text-strong-3">TIENDA</span>
+                </h2>
                 <div class="separator"></div>
             </div>
             <div class="store-content">
@@ -199,78 +202,94 @@
                         quedes sin la tuya.
                     </p>
                 </div>
-                <div class="store-image">
-                    <!-- Slider de Camisetas -->
-                    <div class="tshirt-slider-container">
-                        <div class="swiper tshirtSwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="tshirt-product">
-                                        <div class="tshirt-image">
-                                            <img src="../assets/img/cami1.png" alt="Camiseta Death">
-                                        </div>
-                                        <div class="tshirt-info">
-                                            <h4>CAMISETA BLANCA</h4>
-                                            <p class="product-type">PRODUCT DEFAULT</p>
-                                            <p class="price">€118.00</p>
-                                            <a href="#appointment" class="cta-button-dark btn-up">Comprar</a>
-                                        </div>
-                                    </div>
+            </div>
+        </div>
+        <div class="store-image">
+            <!-- Slider de Camisetas -->
+            <div class="tshirt-slider-container">
+                <div class="swiper tshirtSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="tshirt-product">
+                                <div class="tshirt-image">
+                                    <img src="../assets/img/cami1.png" alt="Camiseta Death">
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="tshirt-product">
-                                        <div class="tshirt-image">
-                                            <img src="../assets/img/cami2.png" alt="Camiseta The Lovers">
-                                        </div>
-                                        <div class="tshirt-info">
-                                            <h4>CAMISETA NEGRA</h4>
-                                            <p class="product-type">PRODUCT GALLERY</p>
-                                            <p class="price">€115.00</p>
-                                            <a href="#appointment" class="cta-button-dark btn-up">Comprar</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="tshirt-product">
-                                        <div class="tshirt-image">
-                                            <img src="../assets/img/cami3.png" alt="Camiseta The Sun">
-                                        </div>
-                                        <div class="tshirt-info">
-                                            <h4>CAMISETA NEGRA</h4>
-                                            <p class="product-type">PRODUCT CUSTOM LAYOUT</p>
-                                            <p class="price">€135.00</p>
-                                            <a href="#appointment" class="cta-button-dark btn-up">Comprar</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="tshirt-product">
-                                        <div class="tshirt-image">
-                                            <img src="../assets/img/cami4.png" alt="Camiseta Exclusive">
-                                        </div>
-                                        <div class="tshirt-info">
-                                            <h4>CAMISETA NEGRA</h4>
-                                            <p class="product-type">PRODUCT CUSTOM HEADER</p>
-                                            <p class="price">€49.00</p>
-                                            <a href="#appointment" class="cta-button-dark btn-up">Comprar</a>
-                                        </div>
-                                    </div>
+                                <div class="tshirt-info">
+                                    <h4>CAMISETA BLANCA</h4>
+                                    <p class="product-type">PRODUCT DEFAULT</p>
+                                    <p class="price">€118.00</p>
+                                    <a href="#appointment" class="cta-button-dark btn-up">Comprar</a>
                                 </div>
                             </div>
-                            <!-- Navegación del slider -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <!-- Paginación -->
-                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tshirt-product">
+                                <div class="tshirt-image">
+                                    <img src="../assets/img/cami2.png" alt="Camiseta The Lovers">
+                                </div>
+                                <div class="tshirt-info">
+                                    <h4>CAMISETA NEGRA</h4>
+                                    <p class="product-type">PRODUCT GALLERY</p>
+                                    <p class="price">€115.00</p>
+                                    <a href="#appointment" class="cta-button-dark btn-up">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tshirt-product">
+                                <div class="tshirt-image">
+                                    <img src="../assets/img/cami3.png" alt="Camiseta The Sun">
+                                </div>
+                                <div class="tshirt-info">
+                                    <h4>CAMISETA NEGRA</h4>
+                                    <p class="product-type">PRODUCT CUSTOM LAYOUT</p>
+                                    <p class="price">€135.00</p>
+                                    <a href="#appointment" class="cta-button-dark btn-up">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tshirt-product">
+                                <div class="tshirt-image">
+                                    <img src="../assets/img/cami1.png" alt="Camiseta Death">
+                                </div>
+                                <div class="tshirt-info">
+                                    <h4>CAMISETA BLANCA</h4>
+                                    <p class="product-type">PRODUCT DEFAULT</p>
+                                    <p class="price">€118.00</p>
+                                    <a href="#appointment" class="cta-button-dark btn-up">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tshirt-product">
+                                <div class="tshirt-image">
+                                    <img src="../assets/img/cami4.png" alt="Camiseta Exclusive">
+                                </div>
+                                <div class="tshirt-info">
+                                    <h4>CAMISETA NEGRA</h4>
+                                    <p class="product-type">PRODUCT CUSTOM HEADER</p>
+                                    <p class="price">€49.00</p>
+                                    <a href="#appointment" class="cta-button-dark btn-up">Comprar</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!-- Navegación del slider -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Paginación -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
+    </section>
+        
 
 
         <!-- Piercings y accesorios -->
-         <div class="piercings-content piercings-content-1">
+       <div class="piercings-section">
+        <div class="piercings-content piercings-content-1">
             <div class="piercings-text">
                 <h2>Descubre nuestros piercings y accesorios</h2>
                 <div class="separator piercings-separator"></div>
@@ -285,7 +304,7 @@
         </div>
 
         <!-- Tarjetas regalo -->
-         <div class="piercings-content piercings-content-2">
+        <div class="piercings-content piercings-content-2">
             <div class="piercings-image-card">
                 <img src="../assets/img/tarjetaRegalo.png" alt="imagen de tarjetas regalo" width="1300" height="800">
             </div>
@@ -300,15 +319,18 @@
                 </p>
             </div>
         </div>
-    </section>
+       </div>
+   
 
-    <!-- Podcast -->    
-    <section class="podcast-section">
+    <!-- Podcast -->
+    <section class="podcast-section" id="podcast">
         <div class="container">
             <div class=" podcast-section-title">
-                <h2><span class="text-strong-2">PODCAST</span> <span class="text-strong-3">DE TRESMONOSINK</span></h2>
+                <h2><span class="text-strong-2">PODCAST</span> <span class="text-strong-3">DE MONOS SALVAJES</span></h2>
                 <div class="separator podcast-separator"></div>
-                <p>En nuestro estudio también compartimos ideas, experiencias y cultura a través de nuestro podcast Monos Salvajes. Además, producimos y presentamos videos para que puedas conocernos más de cerca y disfrutar de nuestro contenido exclusivo.</p>
+                <p>En nuestro estudio también compartimos ideas, experiencias y cultura a través de nuestro podcast
+                    Monos Salvajes. Además, producimos y presentamos videos para que puedas conocernos más de cerca y
+                    disfrutar de nuestro contenido exclusivo.</p>
             </div>
             <div class="podcast-grid">
                 <div class="podcast-episode">
@@ -321,7 +343,7 @@
                         <h3>Episodio 1 - Monos Salvajes</h3>
                     </div>
                 </div>
-                
+
                 <div class="podcast-episode">
                     <div class="episode-thumbnail">
                         <div class="play-button">
@@ -332,7 +354,7 @@
                         <h3>Episodio 2 - Monos Salvajes</h3>
                     </div>
                 </div>
-                
+
                 <div class="podcast-episode">
                     <div class="episode-thumbnail">
                         <div class="play-button">
@@ -472,61 +494,7 @@
     <script src="../js/nav.js"></script>
     <script src="../js/tattoos-gallery.js"></script>
     <script src="../js/scroll-to-top.js"></script>
-    <script>
-        // Initialize Swiper for T-shirt Slider - Copiado exacto del index
-        const tshirtSwiper = new Swiper(".tshirtSwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            pagination: {
-                el: ".tshirtSwiper .swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".tshirtSwiper .swiper-button-next",
-                prevEl: ".tshirtSwiper .swiper-button-prev",
-            },
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            loop: true,
-            effect: 'slide',
-            speed: 800,
-            grabCursor: true,
-            keyboard: {
-                enabled: true,
-            },
-            mousewheel: {
-                forceToAxis: true,
-            },
-            breakpoints: {
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-                1200: {
-                    slidesPerView: 4,
-                    spaceBetween: 30,
-                }
-            }
-        });
-
-        // Pause autoplay on hover for t-shirt slider
-        const tshirtContainer = document.querySelector('.tshirtSwiper');
-        if (tshirtContainer) {
-            tshirtContainer.addEventListener('mouseenter', function () {
-                tshirtSwiper.autoplay.stop();
-            });
-
-            tshirtContainer.addEventListener('mouseleave', function () {
-                tshirtSwiper.autoplay.start();
-            });
-        }
-    </script>
+    <script src="../js/tshirt-slider.js"></script>
 </body>
 
 </html>

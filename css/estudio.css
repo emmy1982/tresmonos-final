@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+.image-background{
+    background-image: url(../assets/img/FotosTienda.png);
+}
+
 .services-section {
     background: var(--light-color);
 }
@@ -102,6 +106,7 @@
     font-family: 'Oswald', sans-serif;
     color: var(--light-color);
     margin-top: 20px;
+    text-align: center;
 }
 
 .studio-img-content p {
@@ -109,6 +114,7 @@
     font-family: 'Oswald', sans-serif;
     color: var(--light-color);
     margin-top: 20px;
+    text-align: center;
 }
 
 .studio-img-content .cta-button {
@@ -118,7 +124,6 @@
 
 /* tienda */
 .store-section {
-    background:var(--dark-color);
     padding-bottom:0;
 }
 
@@ -136,7 +141,7 @@
 .store-text h2 {
     font-size: 2rem;
     font-family: 'Oswald', sans-serif;
-    color:var(--light-color);
+    color:var(--dark-color);
     margin-bottom: 20px;
     line-height: 1.2;
     font-weight: 400;
@@ -145,13 +150,15 @@
 .store-text p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color:var(--light-color);
+    color:var(--dark-color);
 }
 
 /* Slider de Camisetas - Copiado exacto del index */
+
+
 .tshirt-slider-container {
     margin-top: 0;
-    background:var(--dark-color);
+    background:var(--light-color);
     padding: 80px 0px;
 }
 
@@ -159,8 +166,7 @@
     width: 100%;
     height: auto;
     position: relative;
-    max-width: 1300px;
-    margin: 0 auto;
+    max-width: 1400px;
 }
 
 .tshirt-product {
@@ -172,8 +178,7 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
-    max-width: 300px;
-    margin: 0 auto;
+    margin: 30px auto;
     width: 100%;
 }
 
@@ -283,6 +288,10 @@
 }
 
 /* Piercings y accesorios */
+.piercings-section{
+    background: var(--secondary-color);
+    margin-top: -100px;
+}
 
 .piercings-content-1{
     margin-top: 100px;
@@ -476,6 +485,10 @@
 
 /* Responsive para el slider */
 @media (max-width: 768px) {
+.hero-content h1 {
+   margin-top: -100px;
+}
+
     .store-text h2 {
         font-size: 2rem;
     }
@@ -491,6 +504,7 @@
         height: 100%;
         max-width: none;
         margin: 0 auto;
+        max-width: 90%;
     }
     
     .tshirt-slider-container {
@@ -573,6 +587,7 @@
     /* Estilos específicos para cada sección - deben ir al final */
     .piercings-content-1{
         flex-direction: column !important;
+        margin-top: 80px;
     }
     
     .piercings-content-2{

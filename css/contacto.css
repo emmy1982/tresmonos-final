@@ -5,7 +5,7 @@
 }
     
 .contact-hero {
-  height: 60vh;
+  height: 50vh;
   position: relative;
   display: flex;
   align-items: center;
@@ -23,6 +23,15 @@
   background-repeat: no-repeat;
 }
 
+.contact-hero .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(81, 72, 51, 0.211);
+    z-index: 1;
+}
 .contact-hero-content {
   position: relative;
   z-index: 2;
@@ -39,6 +48,7 @@
   letter-spacing: -3px;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 50px;
 }
 
 .contact-hero-content p {

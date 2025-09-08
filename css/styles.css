@@ -49,20 +49,22 @@ section {
    
 }
 
-.section-title p {
+.section-title h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 5rem;
     color: var(--secondary-color);
     margin-bottom: 15px;
     position: relative;
-
+    text-align: start;
+    width: 100%;
+    line-height: 1.1;
 }
 
 .separator {
     width: 280px;
     height: 3px;
     background: var(--primary-color);
-    margin-top: -10px;
+    margin: 10px 0;
 }
 
 
@@ -272,16 +274,13 @@ section {
     width: 30px;
 }
 
-
-
-
 .mobile-menu {
     position: fixed;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.95);
+    background:var(--secondary-color);
     backdrop-filter: blur(10px);
     z-index: 1001;
     transition: left 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -429,6 +428,7 @@ section {
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid transparent;
+    text-decoration: none;
 }
 
 .mobile-social-icons a:hover {
@@ -687,15 +687,27 @@ section {
         transform: translateY(0);
     }
 }
+.hero-content h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-shadow: 2px 5px  4px rgba(0, 0, 0, 0.974);
+    color: #fffefbda;
+    /* color: #d4af37da; */
+    line-height: 1.1;
+    max-width: 400px;
+    margin-top: -10px;
+}
+
 .hero-content img {
     max-width: 100%;
     height: auto;
-    max-height: 60vh;
+    max-height: 50vh;
     object-fit: contain;
     animation: fadeInUp 1s ease-out 0.3s both, float 6s ease-in-out infinite;
-    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(10PX 20px 10px rgb(0, 0, 0));
     transition: all 0.3s ease;
-    border-radius: 15px;
     position: relative;
 }
 
@@ -855,6 +867,7 @@ section {
 }
 
 .text-strong-2 {
+    font-size: 5rem;
     font-weight: bold;
     letter-spacing: -5px;
     padding-right: 8px;
@@ -863,6 +876,7 @@ section {
     transition: all 0.5s ease;
 }
 .text-strong-3 {
+    font-size: 5rem;
     font-weight: 100;
     letter-spacing: -5px;
     color:var(--secondary-color);
@@ -870,6 +884,7 @@ section {
     transition: all 0.5s ease;
 }
 .text-strong-2-light {
+    font-size: 5rem;
     font-weight: bold;
     letter-spacing: -5px;
     padding-right: 8px;
@@ -878,6 +893,7 @@ section {
     transition: all 0.5s ease;
 }
 .text-strong-3-light {
+    font-size: 5rem;
     font-weight: 100;
     letter-spacing: -5px;
     color:var(--light-color);
@@ -1510,10 +1526,18 @@ section {
 }
 
 /* Slider de Camisetas */
+
+.t-shirt-container {
+    width: 100%;
+    height: auto;
+    background-color: var(--secondary-color);
+}
 .tshirt-slider-container {
     margin-top: 80px;
     background: var(--secondary-color);
-    padding: 80px 20px;
+    padding: 80px 20px 40px 20px;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 .tshirtSwiper {
@@ -1647,6 +1671,10 @@ section {
 }
 
 /* Paginación del slider */
+.swiper-pagination{
+    position: relative;
+    margin-top: 40px;
+}
 .tshirtSwiper .swiper-pagination-bullet {
     background: var(--primary-color);
     opacity: 0.5;
@@ -1809,7 +1837,7 @@ section {
     justify-content: center;
 }
 
-.section-title h2{
+.banner-image h2{
     text-align: center;
     font-size: 4rem;
     font-family: 'Oswald', sans-serif;
@@ -1825,7 +1853,7 @@ section {
 
 /* Testimonials Section */
 .testimonials-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.677), rgba(0, 0, 0, 0.5)), url(../assets/img/tienda3.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.488), rgba(0, 0, 0, 0.701)), url(../assets/img/tienda3.png);
     color: white;
     background-size: cover;
     background-position: center;
@@ -2517,6 +2545,10 @@ footer::before {
         display: none;
     }
     
+    .size-h1 {
+        font-size: 4rem;
+    }
+    
     .mobile-menu-toggle {
         display: flex;
     }
@@ -2538,8 +2570,9 @@ footer::before {
     }
     
     .hero-content {
+        margin-top: 10px;
         padding: 0 1rem;
-        gap: 1.5rem;
+        
     }
     
     .hero-content img {
@@ -2837,7 +2870,7 @@ footer::before {
 
 @media (max-width: 600px) {
     .hero-content img {
-        width: 95%;
+        width: 85%;
         min-width: 350px;
         max-width: 550px;
     }
@@ -2913,7 +2946,7 @@ footer::before {
     }
 
     .hero-content img {
-        width: 98%;
+        width: 78%;
 
         margin-bottom: 1.2rem;
         max-width: none;

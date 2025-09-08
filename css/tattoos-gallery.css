@@ -2,19 +2,25 @@
 
 /* Hero Section for Tattoos Page */
 .tattoos-hero {
-    height: 60vh;
+    height: 70vh;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     background-image: 
-        linear-gradient(135deg, rgba(26, 26, 26, 0.8) 0%, rgba(45, 45, 45, 0.6) 50%, rgba(26, 26, 26, 0.8) 100%),
+    linear-gradient(
+        135deg,
+        rgba(26, 26, 26, 0.8) 0%,
+        rgba(45, 45, 45, 0.6) 50%,
+        rgba(26, 26, 26, 0.8) 100%
+      ),
         url('../assets/img/IMG_3905.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin-bottom: 50px;
 }
 
 .tattoos-hero .hero-content {
@@ -37,10 +43,12 @@
     letter-spacing: -2px;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    line-height: 1.1;
+    padding-top: 100px;
 }
 
 .tattoos-hero p {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 100;
     max-width: 500px;
     margin-top: -40px;
@@ -205,12 +213,12 @@
 }
 
 .category-name {
-    color: var(--primary-color);
+    color: var(--light-color);
     font-family: 'Oswald', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: -1px;
     transform: scale(0.8);
     transition: all 0.3s ease;
 }
@@ -338,6 +346,7 @@
     background: var(--dark-color);
     color: var(--primary-color);
     transform: scale(1.1);
+    border: 1px solid var(--primary-color);
 }
 
 
@@ -378,15 +387,17 @@
     }
 
     .tattoos-hero {
-        height: 30vh;
+        height: 50vh;
         background-attachment: scroll;
     }
     
-    .tattoos-hero h1 {
-        font-size: 2.5rem;
+    .hero-content h1 {
+        font-size: 2rem;
+        padding-top: 50px;
     }
     
     .tattoos-hero p {
+        margin-top: 5px;
         font-size: 1.1rem;
         max-width: 300px;
     }
@@ -441,6 +452,16 @@
         font-size: 40px;
         background: rgba(0, 0, 0, 0.1);
         border-radius: 0;
+        background:transparent;
+    }
+    .lightbox-prev:hover,
+    .lightbox-next:hover {
+        background: transparent;
+        border: none;
+    }
+    .lightbox-next {
+      
+        background:transparent;
     }
     
     .lightbox-prev {

@@ -1,5 +1,16 @@
- // Video Modal
- const videoLinks = document.querySelectorAll('.video-link');
+// Detectar iOS para solucionar background-attachment: fixed
+function isIOS() {
+    return /iPad|iPhone|iPod/.test(navigator.userAgent) || 
+           (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+}
+
+// Aplicar clase para iOS
+if (isIOS()) {
+    document.documentElement.classList.add('ios-device');
+}
+
+// Video Modal
+const videoLinks = document.querySelectorAll('.video-link');
  const videoModal = document.getElementById('videoModal');
  const closeVideo = document.querySelector('.close-video');
  const iframe = document.getElementById('youtubeIframe');

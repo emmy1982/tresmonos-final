@@ -1335,7 +1335,48 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    position: relative;
+}
 
+/* Solución para iOS - background-attachment: fixed no funciona */
+@supports (-webkit-touch-callout: none) {
+    .events-section {
+        background-attachment: scroll;
+    }
+    
+    /* Alternativa usando pseudo-elemento para iOS */
+    .events-section::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.677), rgba(0, 0, 0, 0.5)), url(../assets/img/chicoTatuando.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+}
+
+/* Solución alternativa con JavaScript para iOS */
+.ios-device .events-section {
+    background-attachment: scroll;
+}
+
+.ios-device .events-section::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.677), rgba(0, 0, 0, 0.5)), url(../assets/img/chicoTatuando.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 
 .events-content {
@@ -1827,6 +1868,50 @@ section {
     background-attachment: fixed;
     filter: grayscale(70%);
     margin-bottom: 100px;
+    position: relative;
+}
+
+/* Solución para iOS - background-attachment: fixed no funciona */
+@supports (-webkit-touch-callout: none) {
+    .banner-studio-container {
+        background-attachment: scroll;
+    }
+    
+    /* Alternativa usando pseudo-elemento para iOS */
+    .banner-studio-container::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.181), rgba(0, 0, 0, 0.192)), url(../assets/img/canva.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: grayscale(70%);
+        z-index: -1;
+    }
+}
+
+/* Solución alternativa con JavaScript para iOS */
+.ios-device .banner-studio-container {
+    background-attachment: scroll;
+}
+
+.ios-device .banner-studio-container::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.181), rgba(0, 0, 0, 0.192)), url(../assets/img/canva.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(70%);
+    z-index: -1;
 }
 
 .banner-image {

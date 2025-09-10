@@ -8,6 +8,160 @@
     background-image: url(../assets/img/estudioanti.png);
 }
 
+/* Hero Section - Same as Tattoos Page */
+.hero {
+    height: 360px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: 
+    linear-gradient(
+        135deg,
+        rgba(26, 26, 26, 0.8) 0%,
+        rgba(45, 45, 45, 0.6) 50%,
+        rgba(26, 26, 26, 0.8) 100%
+      ),
+        url('../assets/img/estudioanti.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.estudio-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+    linear-gradient(135deg, rgba(9, 36, 56, 0) 0%, rgba(17, 113, 182, 0.205) 50%, rgba(3, 18, 34, 0.5) 100%),
+        url('../assets/img/estudioanti.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+  }
+
+
+
+.hero .hero-content-all {
+    width: 100%;
+    height:auto;
+    text-align: center;
+    color: var(--nav-text);
+    z-index: 2;
+    position: relative;
+    margin-top: 100px;
+}
+
+.space {
+    letter-spacing: -1px;
+}
+
+.size-h1 {
+    font-size: 4rem;
+}
+
+.hero-content-all p {
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 100;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Solución para iOS - background-attachment: fixed no funciona */
+@supports (-webkit-touch-callout: none) {
+    .hero {
+        background-attachment: scroll;
+    }
+    
+    /* Alternativa usando pseudo-elemento para iOS */
+    .hero::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: 
+        linear-gradient(
+            135deg,
+            rgba(26, 26, 26, 0.8) 0%,
+            rgba(45, 45, 45, 0.6) 50%,
+            rgba(26, 26, 26, 0.8) 100%
+          ),
+            url('../assets/img/IMG_3905.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+}
+
+/* Solución alternativa con JavaScript para iOS */
+.ios-device .hero {
+    background-attachment: scroll;
+}
+
+.ios-device .hero::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+    linear-gradient(
+        135deg,
+        rgba(26, 26, 26, 0.8) 0%,
+        rgba(45, 45, 45, 0.6) 50%,
+        rgba(26, 26, 26, 0.8) 100%
+      ),
+        url('../assets/img/IMG_3905.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+/* Responsive para hero section */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+        background-attachment: scroll;
+    }
+    
+    .hero .hero-content-all h1 {
+        font-size: 3rem;
+    }
+    
+    .hero .hero-content-all p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 50vh;
+    }
+    
+    .hero .hero-content-all h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero .hero-content-all p {
+        font-size: 0.9rem;
+    }
+}
+
 .services-section {
     background: var(--light-color);
 }
@@ -122,6 +276,28 @@
 
 }
 
+.video-link-estudio {
+    margin-top: 20px;
+}
+
+.video-link-estudio .play-icon {
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(239, 239, 239, 0.216);
+    border: 1px solid var(--light-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    z-index: 5;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
 /* tienda */
 .store-section {
     padding-bottom:0;
@@ -152,6 +328,8 @@
     line-height: 1.6;
     color:var(--dark-color);
 }
+
+
 
 /* Slider de Camisetas - Copiado exacto del index */
 
@@ -485,10 +663,24 @@
 
 /* Responsive para el slider */
 @media (max-width: 768px) {
-.hero-content h1 {
-   margin-top: -100px;
-}
 
+
+    .hero {
+        height: 50vh;
+        background-attachment: scroll;
+    }
+    
+    .hero .hero-content-all {
+        font-size: 2rem;
+        margin-top: -50px;
+    }
+    
+    .hero .hero-content-all p {
+        margin-top: 5px;
+        font-size: 1.5rem;
+        max-width: 300px;
+        font-weight: 100;
+    }
     .store-text h2 {
         font-size: 2rem;
     }

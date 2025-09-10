@@ -659,8 +659,21 @@ section {
     position: relative;
     /* animation: scrollDown 2s infinite; */
 }
-
-
+.nav-left a {
+    text-decoration: none;
+    background: transparent;
+}
+.insta-nav {
+    font-size: 1.8rem;
+    color: var(--nav-text);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    background: transparent;
+}
+.insta-nav:hover {
+    color: var(--primary-color);
+    background: transparent;
+}
 
 
 

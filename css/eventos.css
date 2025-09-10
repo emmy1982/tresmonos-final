@@ -4,62 +4,159 @@
     margin: 0;
 }
 
-/* Hero Section */
-.events-hero {
+/* Hero Section - Same as Tattoos Page */
+.hero {
+    height: 360px;
     position: relative;
-    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    color: white;
     overflow: hidden;
-}
-
-.events-hero .hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
+    background-image: 
+    linear-gradient(
         135deg,
         rgba(26, 26, 26, 0.8) 0%,
         rgba(45, 45, 45, 0.6) 50%,
         rgba(26, 26, 26, 0.8) 100%
-      ), 
-                url('../assets/img/witoantigua.png') center/cover no-repeat;
-    z-index: -1;
+      ),
+        url('../assets/img/IMG_3905.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0 auto;
+    width: 100%;
 }
 
-.events-hero .hero-overlay {
+
+.hero .hero-content-all {
+    width: 100%;
+    height:auto;
+    text-align: center;
+    color: var(--nav-text);
+    z-index: 2;
+    position: relative;
+    margin-top: 100px;
+}
+
+.space {
+    letter-spacing: -1px;
+}
+
+.size-h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-content-all p {
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 100;
+    max-width: 500px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Solución para iOS - background-attachment: fixed no funciona */
+@supports (-webkit-touch-callout: none) {
+    .hero {
+        background-attachment: scroll;
+    }
+    
+    /* Alternativa usando pseudo-elemento para iOS */
+    .hero::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: 
+        linear-gradient(
+            135deg,
+            rgba(26, 26, 26, 0.8) 0%,
+            rgba(45, 45, 45, 0.6) 50%,
+            rgba(26, 26, 26, 0.8) 100%
+          ),
+            url('../assets/img/IMG_3905.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+}
+
+.eventos-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.093);
-    z-index: 1;
+    background-image: 
+    linear-gradient(135deg, rgba(26, 26, 26, 0.5) 0%, rgba(48, 91, 177, 0.393) 50%, rgba(14, 49, 84, 0.744) 100%),
+        url('../assets/img/eventos3.png');
+        background-size: cover;
+        background-position: center top 65%;
+        background-repeat: no-repeat;
+  }
+
+/* Solución alternativa con JavaScript para iOS */
+.ios-device .hero {
+    background-attachment: scroll;
 }
 
-.events-hero .hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    padding: 0 20px;
+.ios-device .hero::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+    linear-gradient(
+        135deg,
+        rgba(26, 26, 26, 0.8) 0%,
+        rgba(45, 45, 45, 0.6) 50%,
+        rgba(26, 26, 26, 0.8) 100%
+      ),
+        url('../assets/img/IMG_3905.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 
-.events-h1 h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 4rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+/* Responsive para hero section */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+        background-attachment: scroll;
+    }
+    
+    .hero .hero-content-all h1 {
+        font-size: 3rem;
+    }
+    
+    .hero .hero-content-all p {
+        font-size: 1rem;
+    }
 }
 
-.hero-content-p {
-    font-size: 1.3rem;
-    font-weight: 300;
+@media (max-width: 480px) {
+    .hero {
+        height: 50vh;
+    }
+    
+    .hero .hero-content-all h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero .hero-content-all p {
+        font-size: 0.9rem;
+    }
 }
 
 /* Services Section */
@@ -281,17 +378,23 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .events-hero{
+    
+    .hero {
         height: 50vh;
-    }
-    .events-hero h1 {
-        font-size: 4rem;
-        line-height: 1.1;
+        background-attachment: scroll;
     }
     
-    .events-hero p {
-        font-size: 1.2rem;
-        margin-top: -30px;
+    .hero .hero-content-all {
+        font-size: 2rem;
+        margin-top: -50px;
+        max-width: 400px;
+    }
+    
+    .hero .hero-content-all p {
+        margin-top: 5px;
+        font-size: 1.5rem;
+        max-width: 300px;
+        font-weight: 100;
     }
     
     .services-grid {

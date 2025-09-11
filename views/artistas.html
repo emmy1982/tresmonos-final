@@ -18,6 +18,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/artistas.css" />
   </head>
@@ -125,18 +126,18 @@
         <div class="hero-overlay"></div>
       </div>
       <div class="hero-content-all">
-        <h1>
+        <h1 data-aos="zoom-in">
           <strong class="text-strong-2-light size-h1">NUESTROS</strong>
           <strong class="text-strong-3-light space size-h1">ARTISTAS</strong>
         </h1>
-        <p>Descubre nuestros artistas residentes y colaboradores</p>
-        <a href="../views/contacto.html" class="cta-button">PEDIR CITA</a>
+        <p data-aos="fade-up" data-aos-delay="100">Descubre nuestros artistas residentes y colaboradores</p>
+        <a href="../views/contacto.html" class="cta-button" data-aos="fade-up" data-aos-delay="200">PEDIR CITA</a>
       </div>
     </section>
     
     <!-- Artist Title Section -->
     <div class="container">
-        <div class="section-title artist-title-section">
+        <div class="section-title artist-title-section" data-aos="fade-up">
             <p><span class="text-strong-2">TATUADORES</span> <span class="text-strong-3">RESIDENTES</span></p>
             <div class="separator"></div>
             <p class="p-title-artistas">
@@ -150,14 +151,14 @@
     <section class="artist-selection-section">
       <div class="container">
         <div class="artist-selection-content-resident">
-          <div class="artist-selection-item">
+          <div class="artist-selection-item" data-aos="fade-up" data-aos-delay="100">
             <a href="../views/jose.html">
               <img src="../assets/img/Poses.jpg" alt="Tatuador" />
               <h3>JOSE MANUEL</h3>
             </a>
           </div>
 
-          <div class="artist-selection-item">
+          <div class="artist-selection-item" data-aos="fade-up" data-aos-delay="200">
             <a href="../views/alice.html">
               <img src="../assets/img/chicaTatu.png" alt="Tatuador" />
               <h3>ALICE KAY</h3>
@@ -169,7 +170,7 @@
 
    <div class="background-dark">
     <div class="container">
-        <div class="section-title artist-title-section">
+        <div class="section-title artist-title-section" data-aos="fade-up">
             <p>
               <span class="text-strong-2-light">TATUADORES</span>
               <span class="text-strong-3-light">COLABORADORES</span>
@@ -185,7 +186,7 @@
         <section class="artist-selection-section dark-section">
          <div class="container">
             <div class="artist-selection-content-collaborator">
-              <div class="artist-selection-item">
+              <div class="artist-selection-item" data-aos="fade-up" data-aos-delay="200">
                 <img src="../assets/img/chicoTatuando.png" alt="Tatuador" />
                 <h3>TOMMY FERREIRA</h3>
               </div>
@@ -278,7 +279,16 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/nav.js"></script>
     <script src="../js/scroll-to-top.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+    </script>
   </body>
 </html>

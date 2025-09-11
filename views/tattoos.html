@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@400;500;700&family=Oswald:wght@400;500;700&family=Permanent+Marker&family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/tattoos-gallery.css">
 </head>
@@ -105,9 +106,9 @@
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content-all">
-            <h1><strong class="text-strong-2-light size-h1">GALERÍA</strong> <strong class="text-strong-3-light space size-h1">DE TATUAJES</strong></h1>
-            <p>Todos los estilos de tatuaje en un mismo estudio</p>
-                <a href="../index.html#appointment" class="cta-button">PEDIR CITA</a>
+            <h1 data-aos="zoom-in"><strong class="text-strong-2-light size-h1">GALERÍA</strong> <strong class="text-strong-3-light space size-h1">DE TATUAJES</strong></h1>
+            <p data-aos="fade-up" data-aos-delay="100">Todos los estilos de tatuaje en un mismo estudio</p>
+                <a href="../index.html#appointment" class="cta-button" data-aos="fade-up" data-aos-delay="200">PEDIR CITA</a>
         </div>
     </section>
 
@@ -116,7 +117,7 @@
         <div class="container">
             <!-- Realismo Gallery -->
             <div class="gallery-category" id="realismo">
-                <div class="category-title">
+                <div class="category-title" data-aos="fade-up" data-aos-delay="100">
                     <h2>REALISMO</h2>
                     <div class="separator"></div>
                 </div>
@@ -174,7 +175,7 @@
 
             <!-- Blackwork Gallery -->
             <div class="gallery-category" id="blackwork">
-                <div class="category-title">
+                <div class="category-title" data-aos="fade-up" data-aos-delay="100">
                     <h2>BLACKWORK</h2>
                     <div class="separator"></div>
                 </div>
@@ -216,7 +217,7 @@
 
             <!-- Anime Gallery -->
             <div class="gallery-category" id="anime">
-                <div class="category-title">
+                <div class="category-title" data-aos="fade-up" data-aos-delay="100">
                     <h2>ANIME</h2>
                     <div class="separator"></div>
                 </div>
@@ -250,7 +251,7 @@
 
             <!-- Ornamental Gallery -->
             <div class="gallery-category" id="ornamental">
-                <div class="category-title">
+                <div class="category-title" data-aos="fade-up" data-aos-delay="100">
                     <h2>ORNAMENTAL</h2>
                     <div class="separator"></div>
                 </div>
@@ -284,7 +285,7 @@
 
             <!-- Cover Gallery -->
             <div class="gallery-category" id="cover">
-                <div class="category-title">
+                <div class="category-title" data-aos="fade-up" data-aos-delay="100">
                     <h2>COVER</h2>
                     <div class="separator"></div>
                 </div>
@@ -310,7 +311,7 @@
 
             <!-- Línea Fina Gallery -->
             <div class="gallery-category" id="linea-fina">
-                <div class="category-title">
+                <div class="category-title" data-aos="fade-up" data-aos-delay="100">
                     <h2>LÍNEA FINA</h2>
                     <div class="separator"></div>
                 </div>
@@ -348,8 +349,8 @@
     <section class="gallery-cta">
         <div class="container">
             <div class="cta-content">
-                <h2><strong class="text-strong-2">¿Te gusta</strong> <strong class="text-strong-3">lo que ves?</strong></h2>
-                <p>Reserva tu cita y haz tu idea realidad</p>
+                <h2 data-aos="fade-up" data-aos-delay="100"><strong class="text-strong-2">¿Te gusta</strong> <strong class="text-strong-3">lo que ves?</strong></h2>
+                <p data-aos="fade-up" data-aos-delay="200">Reserva tu cita y haz tu idea realidad</p>
                 <a href="https://wa.me/34644507204" class="cta-button-dark" target="_blank" rel="noopener">PEDIR CITA</a>
             </div>
         </div>
@@ -445,8 +446,17 @@
     </div>
 
     <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/nav.js"></script>
     <script src="../js/tattoos-gallery.js"></script>
     <script src="../js/scroll-to-top.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>

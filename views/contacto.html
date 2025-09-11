@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@400;500;700&family=Oswald:wght@400;500;700&family=Permanent+Marker&family=The+Nautigal:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/contacto.css">
 
@@ -111,23 +112,23 @@
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content-all">
-            <h1><strong class="text-strong-2-light size-h1">CONTACTO</strong></h1>
-            <p>Estamos aquí para ayudarte a crear el tatuaje perfecto</p>
-            <a href="https://wa.me/34644507204" class="cta-button" target="_blank" rel="noopener">PEDIR CITA</a>
+            <h1 data-aos="zoom-in"><strong class="text-strong-2-light size-h1">CONTACTO</strong></h1>
+            <p data-aos="fade-up" data-aos-delay="100">Estamos aquí para ayudarte a crear el tatuaje perfecto</p>
+            <a href="https://wa.me/34644507204" class="cta-button" target="_blank" rel="noopener" data-aos="fade-up" data-aos-delay="200">PEDIR CITA</a>
         </div>
     </section>
 
     <!-- Información de Contacto -->
     <section class="contact-info-section">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title" data-aos="fade-up">
                 <p><span class="text-strong-2">PONTE EN</span> <span class="text-strong-3">CONTACTO</span></p>
                 <div class="separator"></div>
             </div>
             
             <div class="contact-grid">
                 <!-- Información de contacto -->
-                <div class="contact-info">
+                <div class="contact-info" data-aos="zoom-in-up" data-aos-delay="100">
                     <h3>Información de Contacto</h3>
                     
                     <div class="contact-item">
@@ -181,7 +182,7 @@
                 </div>
 
                 <!-- Formulario de contacto -->
-                <div class="contact-form">
+                <div class="contact-form" data-aos="zoom-in-up" data-aos-delay="100">
                     <h3>Solicita tu Cita</h3>
                     <form id="contactForm">
                         <div class="form-row">
@@ -320,8 +321,17 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/nav.js"></script>
     <script src="../js/scroll-to-top.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+    </script>
     <script>
         // Formulario de contacto
         document.getElementById('contactForm').addEventListener('submit', function(e) {

@@ -3077,7 +3077,7 @@ footer::before {
     
     .carousel-track {
         display: flex;
-        animation: scroll 8s linear infinite;
+        animation: scroll 5s linear infinite;
         white-space: nowrap;
     }
 }

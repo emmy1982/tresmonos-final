@@ -211,7 +211,14 @@
         gap: 20px;
         padding: 30px 15px;
     }
+    .studio-img-content h2{
+        padding-top: 80px;
+    }
+    .btn-up-studio{
+        margin-bottom: 50px;
+    }
 }
+    
 
 /* Responsive para móviles */
 @media (max-width: 480px) {

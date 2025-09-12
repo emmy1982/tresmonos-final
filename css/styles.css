@@ -1302,6 +1302,12 @@ section {
     position: relative;
 }
 
+/* Mejorar el parallax para navegadores que no soportan background-attachment: fixed */
+.no-parallax-support .events-section {
+    background-attachment: scroll;
+    background-size: 120% auto; /* Hacer la imagen más grande para el efecto parallax */
+}
+
 /* Solución para iOS - background-attachment: fixed no funciona */
 @supports (-webkit-touch-callout: none) {
     .events-section {
@@ -1522,6 +1528,7 @@ section {
 }
 
 .bold {
+    font-family: 'Oswald', sans-serif;
     font-weight: 700;
     color: var(--primary-color);
 }
@@ -1827,6 +1834,12 @@ section {
     filter: grayscale(70%);
     margin-bottom: 100px;
     position: relative;
+}
+
+/* Mejorar el parallax para navegadores que no soportan background-attachment: fixed */
+.no-parallax-support .banner-studio-container {
+    background-attachment: scroll;
+    background-size: 120% auto; /* Hacer la imagen más grande para el efecto parallax */
 }
 
 /* Solución para iOS - background-attachment: fixed no funciona */

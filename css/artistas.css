@@ -142,7 +142,7 @@
     }
     
     .hero .hero-content-all p {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -155,9 +155,7 @@
         font-size: 2.5rem;
     }
     
-    .hero .hero-content-all p {
-        font-size: 0.9rem;
-    }
+    
 }
 
 /* Artist Title Section */
@@ -259,8 +257,6 @@
 }
 
 .p-title-artistas {
-    font-size: 1.5rem;
-    font-family: 'Oswald', sans-serif;
     font-weight: 100;
     color: var(--dark-color);
     margin-top: 30px;
@@ -268,8 +264,7 @@
     line-height: 1.6;
 }
 .p-title-artistas-light {
-    font-size: 1.5rem;
-    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
     font-weight: 100;
     color: var(--light-color);
     margin-top: 30px;
@@ -523,7 +518,6 @@
     }
     
     .p-title-artistas {
-        font-size: 1.5rem;
         margin-top: 20px;
         max-width: 100%;
     }

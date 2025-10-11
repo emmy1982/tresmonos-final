@@ -815,6 +815,7 @@ section {
     padding-right: 20px;
     font-family: 'Oswald', sans-serif;
     font-weight: 100;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .member-title,
@@ -855,6 +856,7 @@ section {
     color: white;
     font-size: 22px;
     transition: color 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .team-member .social-links a:hover {

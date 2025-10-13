@@ -500,7 +500,7 @@ section {
     height: 100%;
     background-image: 
     linear-gradient(135deg, rgba(26, 26, 26, 0.5) 0%, rgba(45, 45, 45, 0.3) 50%, rgba(26, 26, 26, 0.5) 100%),
-        url('../assets/img/heroblue.png');
+        url('../assets/img/heroblue.avif');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1294,60 +1294,46 @@ section {
 
 /* ===== EVENTS SECTION ===== */
 .events-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.677), rgba(0, 0, 0, 0.5)), url(../assets/img/chicoTatuando.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     position: relative;
+    overflow: hidden;
 }
 
-/* Mejorar el parallax para navegadores que no soportan background-attachment: fixed */
-.no-parallax-support .events-section {
-    background-attachment: scroll;
-    background-size: 120% auto; /* Hacer la imagen más grande para el efecto parallax */
-}
-
-/* Solución para iOS - background-attachment: fixed no funciona */
-@supports (-webkit-touch-callout: none) {
-    .events-section {
-        background-attachment: scroll;
-    }
-    
-    .events-section::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.677), rgba(0, 0, 0, 0.5)), url(../assets/img/chicoTatuando.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        z-index: -1;
-    }
-}
-
-.ios-device .events-section {
-    background-attachment: scroll;
-}
-
-.ios-device .events-section::before {
+.events-section::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.677), rgba(0, 0, 0, 0.5)), url(../assets/img/chicoTatuando.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.677), rgba(0, 0, 0, 0.5)), url(../assets/img/tresmonosink_tatuador.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;
+    background-attachment: fixed;
+    filter: contrast(0.8) sepia(0.2) saturate(1) brightness(0.8);
+    z-index: 0;
+}
+
+/* Mejorar el parallax para navegadores que no soportan background-attachment: fixed */
+.no-parallax-support .events-section::before {
+    background-attachment: scroll;
+    background-size: 120% auto; /* Hacer la imagen más grande para el efecto parallax */
+}
+
+/* Solución para iOS - background-attachment: fixed no funciona */
+@supports (-webkit-touch-callout: none) {
+    .events-section::before {
+        background-attachment: scroll;
+    }
+}
+
+.ios-device .events-section::before {
+    background-attachment: scroll;
 }
 
 .events-content {
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     gap: 40px;
@@ -1826,12 +1812,11 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.181), rgba(0, 0, 0, 0.192)), url(../assets/img/canva.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.181), rgba(0, 0, 0, 0.192)), url(../assets/img/colage2.avif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    filter: grayscale(70%);
     margin-bottom: 100px;
     position: relative;
 }
@@ -1856,11 +1841,10 @@ section {
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.181), rgba(0, 0, 0, 0.192)), url(../assets/img/canva.png);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.181), rgba(0, 0, 0, 0.192)), url(../assets/img/colage.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        filter: grayscale(70%);
         z-index: -1;
     }
 }
@@ -1877,11 +1861,10 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.181), rgba(0, 0, 0, 0.192)), url(../assets/img/canva.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.181), rgba(0, 0, 0, 0.192)), url(../assets/img/colage.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: grayscale(70%);
     z-index: -1;
 }
 
@@ -1909,7 +1892,7 @@ section {
 
 /* ===== TESTIMONIALS SECTION ===== */
 .testimonials-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.488), rgba(0, 0, 0, 0.701)), url(../assets/img/tienda3.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.488), rgba(0, 0, 0, 0.308)), url(../assets/img/tienda_vintage.png);
     color: white;
     background-size: cover;
     background-position: center;

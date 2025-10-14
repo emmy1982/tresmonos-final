@@ -655,6 +655,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    filter:brightness(0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -668,6 +669,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    filter:brightness(0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -681,6 +683,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    filter:brightness(0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -694,6 +697,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    filter:brightness(0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -720,7 +724,9 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    filter:brightness(0.8);
     display: flex;
+    filter:brightness(0.8);
     align-items: center;
     justify-content: center;
     position: relative;
@@ -733,6 +739,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    filter:brightness(0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -746,6 +753,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    filter:brightness(0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -759,6 +767,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    filter:brightness(0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -775,6 +784,7 @@
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.77);
 }
 
 .play-button:hover {

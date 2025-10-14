@@ -162,6 +162,10 @@
 
 /* Gallery Grid */
 
+.display-none {
+    display: none;
+}
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -381,6 +385,9 @@
 }
 
 @media (max-width: 768px) {
+    .display-none {
+        display: block;
+    }
 
     .tattoos-gallery-section .container {
         padding: 0.3rem;

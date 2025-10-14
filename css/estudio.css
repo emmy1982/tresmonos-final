@@ -553,11 +553,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../assets/img/accesorios.png);
+    background-image: url(../assets/img/accesorios.avif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(0.7)sepia(0.2);
+    filter:contrast(0.8) brightness(0.7)sepia(0.2);
 }
 .piercings-image-card{
     width: 50%;

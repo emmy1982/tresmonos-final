@@ -14,8 +14,7 @@
         rgba(26, 26, 26, 0.8) 0%,
         rgba(45, 45, 45, 0.6) 50%,
         rgba(26, 26, 26, 0.8) 100%
-      ),
-        url('../assets/img/IMG_3905.jpeg');
+      );
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

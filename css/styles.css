@@ -364,7 +364,7 @@ section {
     text-decoration: none;
     font-size: 2rem;
     font-weight: 500;
-    letter-spacing: 2px;
+    /* letter-spacing: ; */
     text-transform: uppercase;
     transition: all 0.3s ease;
     position: relative;
@@ -394,7 +394,7 @@ section {
 
 .mobile-social {
     position: absolute;
-    bottom: 150px;
+    bottom: 220px;
     left: 0;
     right: 0;
     margin-top: 1rem;
@@ -439,7 +439,7 @@ section {
 
 .mobile-cta {
     position: absolute;
-    bottom: 70px;
+    bottom: 140px;
     left: 0;
     right: 0;
     text-align: center;
@@ -467,6 +467,18 @@ section {
     color: black;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(212, 175, 55, 0.4);
+}
+
+.close-icon {
+    font-size: 5rem;
+    font-weight: 100;
+    color: var(--nav-text);
+    transition: all 0.3s ease;
+}
+
+.close-icon:hover {
+    color: var(--primary-color);
+    transform: rotate(90deg);
 }
 
 @keyframes slideInUp {
@@ -1927,6 +1939,10 @@ section {
   
   .location-section .container {
     margin-bottom: 60px;
+  }
+
+  .location-text {
+    max-width: 650px;
   }
   
   .full-width-map {

@@ -651,6 +651,23 @@ section {
     width: 100%;
 }
 
+/* ===== CTA SECTION ===== */
+.cta-section {
+    padding: 4rem 0;
+}
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+.cta-title {
+    margin: 0;
+}
+
 /* ===== SCROLL DOWN ===== */
 .scroll-down {
     position: absolute;
@@ -1475,7 +1492,8 @@ section {
     height: auto;
     max-width: 100%;
     border-radius: 10px;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.841));
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.841)) contrast(0.8);
+    transform: rotate(-15deg);
 }
 
 .gift-card-text h3 {
@@ -1598,7 +1616,7 @@ section {
     font-weight: 600;
     color: var(--dark-color);
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: -0.5px;
 }
 
 .product-type {
@@ -3045,6 +3063,16 @@ footer::before {
         display: flex;
         animation: scroll 5s linear infinite !important;
         white-space: nowrap;
+    }
+    .gift-card-image img {
+        width: 90%;
+        height: auto;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        max-width: 100%;
+        border-radius: 10px;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.841)) contrast(0.8);
+        transform: rotate(-15deg);
     }
 }
 

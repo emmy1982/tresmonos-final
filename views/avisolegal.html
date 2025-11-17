@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso Legal | Tres Monos Ink</title>
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@400;500;700&family=Oswald:wght@400;500;700&family=Permanent+Marker&family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <style>
+        /* Estilos específicos para la página de aviso legal */
+        .legal-notice-section {
+            padding: 120px 0 80px;
+            background-color: #f8f8f8;
+            min-height: 100vh;
+        }
+
+        .legal-notice-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .legal-notice-content {
+            background: white;
+            padding: 60px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .m-auto {
+            margin: auto;
+        }
+
+        .legal-notice-content header {
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #1a1a1a;
+        }
+
+        .legal-notice-content header h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .legal-notice-content header h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            color: #666;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+
+        .legal-notice-content h3 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.8rem;
+            color: #1a1a1a;
+            margin: 40px 0 25px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .legal-notice-content h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            color: #333;
+            margin: 30px 0 15px;
+            font-weight: 600;
+        }
+
+        .legal-notice-content p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            line-height: 1.9;
+            color: #555;
+            margin-bottom: 18px;
+            text-align: justify;
+        }
+
+        .legal-notice-content ul {
+            margin-left: 40px;
+            margin-bottom: 25px;
+        }
+
+        .legal-notice-content ul li {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            line-height: 1.9;
+            color: #555;
+            margin-bottom: 12px;
+            list-style-type: disc;
+        }
+
+        .blanc-space {
+            white-space: normal;
+        }
+
+        .legal-notice-content a {
+            color: #1a1a1a;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+        .legal-notice-content a:hover {
+            color: #555;
+        }
+
+        .text-body {
+            color: #1a1a1a;
+        }
+
+        .text-decoration-none {
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .legal-notice-section {
+                padding: 100px 0 60px;
+            }
+
+            .legal-notice-content {
+                padding: 30px 20px;
+            }
+
+            .legal-notice-content header h2 {
+                font-size: 1.8rem;
+            }
+
+            .legal-notice-content header h4 {
+                font-size: 1rem;
+            }
+
+            .legal-notice-content h3 {
+                font-size: 1.5rem;
+            }
+
+            .legal-notice-content h4 {
+                font-size: 1.2rem;
+            }
+
+            .legal-notice-content p,
+            .legal-notice-content ul li {
+                font-size: 0.95rem;
+                text-align: left;
+            }
+
+            .legal-notice-content ul {
+                margin-left: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/34644507204" class="whatsapp-btn" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="nav-left">
+                <a href="https://www.instagram.com/tr3smonosink/" target="_blank" class="social-icon" aria-label="Instagram">
+                    <i class="fab fa-instagram insta-nav"></i>
+                </a>
+                <a href="../index.html" class="nav-link">INICIO</a>
+                <a href="./tattoos.html" class="nav-link">TATTOOS</a>
+                <a href="./artistas.html" class="nav-link">ARTISTAS</a>
+            </div>
+            
+            <div class="nav-center">
+                <a href="../index.html" class="">
+                    <img src="../assets/img/logomono.png" alt="Tres Monos Ink">
+                </a>
+            </div>
+            
+            <div class="nav-right">
+                <a href="./estudio.html" class="nav-link">EL ESTUDIO</a>
+                <a href="./eventos.html" class="nav-link">EVENTOS</a>
+                <a href="./contacto.html" class="nav-link">CONTACTO</a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <img src="../assets/img/logomono.png" alt="Tres Monos Ink" class="mobile-logo">
+            <div class="mobile-menu-close">
+                <span class="close-icon">&times;</span>
+            </div>
+        </div>
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-links">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="./tattoos.html">TATTOOS</a></li>
+                <li><a href="./artistas.html">ARTISTAS</a></li>
+                <li><a href="./estudio.html">EL ESTUDIO</a></li>
+                <li><a href="./eventos.html">EVENTOS</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+                <li><a href="./estudio.html#podcast">PODCAST</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-social">
+            <div class="mobile-social-icons">
+                <a href="https://www.facebook.com/3monosAtarfe" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/tr3smonosink/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com/" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.tiktok.com/@tresmonos.ink" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+        <div class="mobile-cta">
+            <a href="https://wa.me/34644507204" class="mobile-cta-button" target="_blank" rel="noopener">
+                PEDIR CITA
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Aviso Legal Section -->
+    <section class="legal-notice-section">
+        <div class="legal-notice-container">
+            <div class="legal-notice-content">
+                <header class="text-center">
+                    <h2 class="m-auto">AVISO LEGAL Y CONDICIONES GENERALES DE USO</h2>
+                    <h4><span class="blanc-space">www.tresmonosink.com</span></h4>
+                </header>
+                
+                <div>
+                    <h3>I. INFORMACIÓN GENERAL</h3>
+                    <p>En cumplimiento con el deber de información dispuesto en la Ley 34/2002 de Servicios de la Sociedad de la Información y el Comercio Electrónico (LSSI-CE) de 11 de julio, se facilitan a continuación los siguientes datos de información general de este sitio web:</p>
+                    <p>La titularidad de este sitio web, <span class="blanc-space">www.tresmonosink.com</span>, (en adelante, Sitio Web) la ostenta: <span class="blanc-space">Jose Manuel Fernández Rodríguez</span>, con NIF: <span class="blanc-space">74666467</span>, y cuyos datos de contacto son:</p>
+                    <p>Dirección: <span class="blanc-space">C/Av. de Andalucía 84, Atarfe, Granada</span></p>
+                    <p>Teléfono de contacto: <span class="blanc-space">644 50 72 04</span></p>
+                    <p>Email de contacto: <span class="blanc-space">tresmonos14@gmail.com</span></p>
+                    
+                    <h3>II. TÉRMINOS Y CONDICIONES GENERALES DE USO</h3>
+                    <h4>El objeto de las condiciones: El Sitio Web</h4>
+                    <p>El objeto de las presentes Condiciones Generales de Uso (en adelante, Condiciones) es regular el acceso y la utilización del Sitio Web. A los efectos de las presentes Condiciones se entenderá como Sitio Web: la apariencia externa de los interfaces de pantalla, tanto de forma estática como de forma dinámica, es decir, el árbol de navegación; y todos los elementos integrados tanto en los interfaces de pantalla como en el árbol de navegación (en adelante, Contenidos) y todos aquellos servicios o recursos en línea que en su caso ofrezca a los Usuarios (en adelante, Servicios).</p>
+                    <p><span class="blanc-space">Estudio de tatuajes</span> se reserva la facultad de modificar, en cualquier momento, y sin aviso previo, la presentación y configuración del Sitio Web y de los Contenidos y Servicios que en él pudieran estar incorporados. El Usuario reconoce y acepta que en cualquier momento <span class="blanc-space">Estudio de tatuajes</span> pueda interrumpir, desactivar y/o cancelar cualquiera de estos elementos que se integran en el Sitio Web o el acceso a los mismos.</p>
+                    <p>El acceso al Sitio Web por el Usuario tiene carácter libre y, por regla general, es gratuito sin que el Usuario tenga que proporcionar una contraprestación para poder disfrutar de ello, salvo en lo relativo al coste de conexión a través de la red de telecomunicaciones suministrada por el proveedor de acceso que hubiere contratado el Usuario.</p>
+                    
+                    <h4>El Usuario</h4>
+                    <p>El acceso, la navegación y uso del Sitio Web, confiere la condición de Usuario, por lo que se aceptan, desde que se inicia la navegación por el Sitio Web, todas las Condiciones aquí establecidas, así como sus ulteriores modificaciones, sin perjuicio de la aplicación de la correspondiente normativa legal de obligado cumplimiento según el caso. Dada la relevancia de lo anterior, se recomienda al Usuario leerlas cada vez que visite el Sitio Web.</p>
+                    <p>El Sitio Web de <span class="blanc-space">Estudio de tatuajes</span> proporciona gran diversidad de información, servicios y datos. El Usuario asume su responsabilidad para realizar un uso correcto del Sitio Web. Esta responsabilidad se extenderá a:</p>
+                    <ul>
+                        <li>Un uso de la información, Contenidos y/o Servicios y datos ofrecidos por <span class="blanc-space">Estudio de tatuajes</span> sin que sea contrario a lo dispuesto por las presentes Condiciones, la Ley, la moral o el orden público, o que de cualquier otro modo puedan suponer lesión de los derechos de terceros o del mismo funcionamiento del Sitio Web.</li>
+                        <li>La veracidad y licitud de las informaciones aportadas por el Usuario en los formularios extendidos por <span class="blanc-space">Estudio de tatuajes</span> para el acceso a ciertos Contenidos o Servicios ofrecidos por el Sitio Web. En todo caso, el Usuario notificará de forma inmediata a <span class="blanc-space">Estudio de tatuajes</span> acerca de cualquier hecho que permita el uso indebido de la información registrada en dichos formularios, tales como, pero no solo, el robo, extravío, o el acceso no autorizado a identificadores y/o contraseñas, con el fin de proceder a su inmediata cancelación.</li>
+                    </ul>
+                    <p>El mero acceso a este Sitio Web no supone entablar ningún tipo de relación de carácter comercial entre <span class="blanc-space">Estudio de tatuajes</span> y el Usuario.</p>
+                    
+                    <h3>III. ACCESO Y NAVEGACIÓN EN EL SITIO WEB: EXCLUSIÓN DE GARANTÍAS Y RESPONSABILIDAD</h3>
+                    <p><span class="blanc-space">Estudio de tatuajes</span> no garantiza la continuidad, disponibilidad y utilidad del Sitio Web, ni de los Contenidos o Servicios. <span class="blanc-space">Estudio de tatuajes</span> hará todo lo posible por el buen funcionamiento del Sitio Web, sin embargo, no se responsabiliza ni garantiza que el acceso a este Sitio Web no vaya a ser ininterrumpido o que esté libre de error.</p>
+                    <p>Tampoco se responsabiliza o garantiza que el contenido o software al que pueda accederse a través de este Sitio Web, esté libre de error o cause un daño al sistema informático (software y hardware) del Usuario. En ningún caso <span class="blanc-space">Estudio de tatuajes</span> será responsable por las pérdidas, daños o perjuicios de cualquier tipo que surjan por el acceso, navegación y el uso del Sitio Web, incluyéndose, pero no limitándose, a los ocasionados a los sistemas informáticos o los provocados por la introducción de virus.</p>
+                    <p><span class="blanc-space">Estudio de tatuajes</span> tampoco se hace responsable de los daños que pudiesen ocasionarse a los usuarios por un uso inadecuado de este Sitio Web. En particular, no se hace responsable en modo alguno de las caídas, interrupciones, falta o defecto de las telecomunicaciones que pudieran ocurrir.</p>
+                    
+                    <h3>IV. POLÍTICA DE ENLACES</h3>
+                    <p>Se informa que el Sitio Web de <span class="blanc-space">Estudio de tatuajes</span> pone o puede poner a disposición de los Usuarios medios de enlace (como, entre otros, links, banners, botones), directorios y motores de búsqueda que permiten a los Usuarios acceder a sitios web pertenecientes y/o gestionados por terceros.</p>
+                    <p>La instalación de estos enlaces, directorios y motores de búsqueda en el Sitio Web tiene por objeto facilitar a los Usuarios la búsqueda de y acceso a la información disponible en Internet, sin que pueda considerarse una sugerencia, recomendación o invitación para la visita de los mismos.</p>
+                    <p><span class="blanc-space">Estudio de tatuajes</span> no ofrece ni comercializa por sí ni por medio de terceros los productos y/o servicios disponibles en dichos sitios enlazados.</p>
+                    <p>Asimismo, tampoco garantizará la disponibilidad técnica, exactitud, veracidad, validez o legalidad de sitios ajenos a su propiedad a los que se pueda acceder por medio de los enlaces.</p>
+                    <p><span class="blanc-space">Estudio de tatuajes</span> en ningún caso revisará o controlará el contenido de otros sitios web, así como tampoco aprueba, examina ni hace propios los productos y servicios, contenidos, archivos y cualquier otro material existente en los referidos sitios enlazados.</p>
+                    <p><span class="blanc-space">Estudio de tatuajes</span> no asume ninguna responsabilidad por los daños y perjuicios que pudieran producirse por el acceso, uso, calidad o licitud de los contenidos, comunicaciones, opiniones, productos y servicios de los sitios web no gestionados por <span class="blanc-space">Estudio de tatuajes</span> y que sean enlazados en este Sitio Web.</p>
+                    <p>El Usuario o tercero que realice un hipervínculo desde una página web de otro, distinto, sitio web al Sitio Web de <span class="blanc-space">Estudio de tatuajes</span> deberá saber que:</p>
+                    <p>No se permite la reproducción —total o parcialmente— de ninguno de los Contenidos y/o Servicios del Sitio Web sin autorización expresa de <span class="blanc-space">Estudio de tatuajes</span>.</p>
+                    <p>No se permite tampoco ninguna manifestación falsa, inexacta o incorrecta sobre el Sitio Web de <span class="blanc-space">Estudio de tatuajes</span>, ni sobre los Contenidos y/o Servicios del mismo.</p>
+                    <p>A excepción del hipervínculo, el sitio web en el que se establezca dicho hiperenlace no contendrá ningún elemento, de este Sitio Web, protegido como propiedad intelectual por el ordenamiento jurídico español, salvo autorización expresa de <span class="blanc-space">Estudio de tatuajes</span>.</p>
+                    <p>El establecimiento del hipervínculo no implicará la existencia de relaciones entre <span class="blanc-space">Estudio de tatuajes</span> y el titular del sitio web desde el cual se realice, ni el conocimiento y aceptación de <span class="blanc-space">Estudio de tatuajes</span> de los contenidos, servicios y/o actividades ofrecidas en dicho sitio web, y viceversa.</p>
+                    
+                    <h3>V. PROPIEDAD INTELECTUAL E INDUSTRIAL</h3>
+                    <p><span class="blanc-space">Estudio de tatuajes</span> por sí o como parte cesionaria, es titular de todos los derechos de propiedad intelectual e industrial del Sitio Web, así como de los elementos contenidos en el mismo (a título enunciativo y no exhaustivo, imágenes, sonido, audio, vídeo, software o textos, marcas o logotipos, combinaciones de colores, estructura y diseño, selección de materiales usados, programas de ordenador necesarios para su funcionamiento, acceso y uso, etc.). Serán, por consiguiente, obras protegidas como propiedad intelectual por el ordenamiento jurídico español, siéndoles aplicables tanto la normativa española y comunitaria en este campo, como los tratados internacionales relativos a la materia y suscritos por España.</p>
+                    <p>Todos los derechos reservados. En virtud de lo dispuesto en la Ley de Propiedad Intelectual, quedan expresamente prohibidas la reproducción, la distribución y la comunicación pública, incluida su modalidad de puesta a disposición, de la totalidad o parte de los contenidos de esta página web, con fines comerciales, en cualquier soporte y por cualquier medio técnico, sin la autorización de <span class="blanc-space">Estudio de tatuajes</span>.</p>
+                    <p>El Usuario se compromete a respetar los derechos de propiedad intelectual e industrial de <span class="blanc-space">Estudio de tatuajes</span>. Podrá visualizar los elementos del Sitio Web o incluso imprimirlos, copiarlos y almacenarlos en el disco duro de su ordenador o en cualquier otro soporte físico siempre y cuando sea, exclusivamente, para su uso personal. El Usuario, sin embargo, no podrá suprimir, alterar, o manipular cualquier dispositivo de protección o sistema de seguridad que estuviera instalado en el Sitio Web.</p>
+                    <p>En caso de que el Usuario o tercero considere que cualquiera de los Contenidos del Sitio Web suponga una violación de los derechos de protección de la propiedad intelectual, deberá comunicarlo inmediatamente a <span class="blanc-space">Estudio de tatuajes</span> a través de los datos de contacto del apartado de INFORMACIÓN GENERAL de este Aviso Legal y Condiciones Generales de Uso.</p>
+                    
+                    <h3>VI. ACCIONES LEGALES, LEGISLACIÓN APLICABLE Y JURISDICCIÓN</h3>
+                    <p><span class="blanc-space">Estudio de tatuajes</span> se reserva la facultad de presentar las acciones civiles o penales que considere necesarias por la utilización indebida del Sitio Web y Contenidos, o por el incumplimiento de las presentes Condiciones.</p>
+                    <p>La relación entre el Usuario y <span class="blanc-space">Estudio de tatuajes</span> se regirá por la normativa vigente y de aplicación en el territorio español. De surgir cualquier controversia en relación con la interpretación y/o a la aplicación de estas Condiciones las partes someterán sus conflictos a la jurisdicción ordinaria sometiéndose a los jueces y tribunales que correspondan conforme a derecho.</p>
+                    <p>Este documento de Aviso Legal y Condiciones Generales de uso del sitio web ha sido creado mediante el generador de <a class="text-body text-decoration-none" href="https://textos-legales.edgartamarit.com/">plantilla de aviso legal y condiciones de uso</a> online el día 17/11/2025.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <a href="../index.html">
+                           <img src="../assets/img/logomono.png" alt="Tres Monos Ink">
+                        </a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/3monosAtarfe" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/tr3smonosink/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@tresmonos.ink" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Datos de contacto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p>Av. de Andalucía 84, Atarfe, Granada</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p>+34 644 50 72 04</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p>tresmonos14@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <p>Martes a Viernes: <br> 10:30 - 14:00 | 17:00 - 20:00<br>
+                            <p>Sábado: Cita previa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="./artistas.html">Artistas</a></li>
+                        <li><a href="./estudio.html">Estudio</a></li>
+                        <li><a href="./eventos.html">Eventos</a></li>
+                        <li><a href="./tattoos.html">Tattoos</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="./estudio.html#podcast">Podcast</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Suscríbete</h3>
+                    <p>Recibe nuestras últimas novedades y promociones especiales</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico">
+                        <button type="submit" class="btn btn-secondary">Suscribir</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Tres Monos Ink. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="./politicasdeprivacidad.html">Política de Privacidad</a>
+                    <a href="./avisolegal.html">Aviso Legal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/scroll-to-top.js"></script>
+</body>
+</html>

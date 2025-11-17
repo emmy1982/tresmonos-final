@@ -565,7 +565,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.353);
+    background-color: rgba(0, 0, 0, 0.249);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -573,10 +573,18 @@
 }
 
 .piercings-image-card img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 95%;
+    height: auto;
     border-radius: 10px;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Responsive para la tarjeta de regalo y no se desborde en pantallas grandes */
+@media (min-width: 1400px) {
+    .piercings-image-card img {
+        max-height: 500px; 
+    }
 }
 
 .piercings-separator{

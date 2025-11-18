@@ -183,7 +183,7 @@
                         </a>
                     </div>
                     <div class="gallery-item">
-                        <a href="#" class="gallery-link" data-src="../assets/img/realismo/tatuaje_realismo6.jpg" data-title="Tatuaje realista - Mujer con casco romano ">
+                        <a href="#" class="gallery-link" data-src="../assets/img/realismo/tatuaje_realismo6.jpg" data-title="Tatuaje realista ">
                             <img src="../assets/img/realismo/tatuaje_realismo6.jpg" alt="Tatuaje realista - Mujer con casco romano " width="1890" height="1417">
                             <div class="gallery-overlay">
                                 <span class="category-name">REALISMO</span>
@@ -907,7 +907,7 @@
                     <h3>Suscríbete</h3>
                     <p>Recibe nuestras últimas novedades y promociones especiales</p>
                     <form class="newsletter-form">
-                        <input type="email" placeholder="Tu correo electrónico">
+                        <input type="email" name="user_email" placeholder="Tu correo electrónico" required>
                         <button type="submit" class="btn btn-secondary">Suscribir</button>
                     </form>
                 </div>
@@ -940,9 +940,11 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="../js/nav.js"></script>
     <script src="../js/tattoos-gallery.js"></script>
     <script src="../js/scroll-to-top.js"></script>
+    <script src="../js/emailjs-forms.js"></script>
     <script>
         AOS.init({
             duration: 800,

@@ -318,7 +318,7 @@
                     <h3>Suscríbete</h3>
                     <p>Recibe nuestras últimas novedades y promociones especiales</p>
                     <form class="newsletter-form">
-                        <input type="email" placeholder="Tu correo electrónico">
+                        <input type="email" name="user_email" placeholder="Tu correo electrónico" required>
                         <button type="submit" class="btn btn-secondary">Suscribir</button>
                     </form>
                 </div>
@@ -335,52 +335,16 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="../js/nav.js"></script>
     <script src="../js/scroll-to-top.js"></script>
+    <script src="../js/emailjs-forms.js"></script>
     <script>
         AOS.init({
             duration: 800,
             easing: 'ease-in-out',
             once: true,
             offset: 100
-        });
-    </script>
-    <script>
-        // Formulario de contacto
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Aquí puedes agregar la lógica para enviar el formulario
-            // Por ejemplo, usando fetch() para enviar a un servidor
-            
-            // Simulación de envío exitoso
-            alert('¡Mensaje enviado correctamente! Te contactaremos pronto.');
-            
-            // Limpiar formulario
-            this.reset();
-        });
-
-        // Validación en tiempo real
-        const inputs = document.querySelectorAll('input[required], textarea[required]');
-        inputs.forEach(input => {
-            input.addEventListener('blur', function() {
-                if (this.value.trim() === '') {
-                    this.style.borderColor = '#e74c3c';
-                } else {
-                    this.style.borderColor = '#2ecc71';
-                }
-            });
-        });
-
-        // Validación de email
-        const emailInput = document.getElementById('email');
-        emailInput.addEventListener('blur', function() {
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (this.value && !emailRegex.test(this.value)) {
-                this.style.borderColor = '#e74c3c';
-            } else if (this.value) {
-                this.style.borderColor = '#2ecc71';
-            }
         });
     </script>
 </body>

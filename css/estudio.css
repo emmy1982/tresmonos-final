@@ -247,7 +247,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.677), rgba(0, 0, 0, 0.5)), url(../assets/img/tienda01.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.588), rgba(0, 0, 0, 0.5)), url(../assets/img/entrada.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -263,7 +263,8 @@
     color: var(--dark-color);
     margin-top: 30px;
     max-width: 600px;
-    line-height: 1.6;
+    line-height: 1.8;
+    
 }
 .p-title-artistas-light {
     font-size: 1.1rem;
@@ -271,7 +272,7 @@
     color: var(--light-color);
     margin-top: 30px;
     max-width: 600px;
-    line-height: 1.6;
+    
 }
 
 .artist-profile-content {
@@ -522,6 +523,7 @@
     .p-title-artistas {
         margin-top: 20px;
         max-width: 100%;
+        line-height: 1.8;
     }
     
     .artist-profile-section {

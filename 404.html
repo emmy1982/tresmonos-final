@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página No Encontrada | Tres Monos Ink</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container-404 {
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .error-code {
+            font-size: 150px;
+            font-weight: 900;
+            color: #c41e3a;
+            text-shadow: 0 0 30px rgba(196, 30, 58, 0.5);
+            line-height: 1;
+            margin-bottom: 20px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 20px rgba(196, 30, 58, 0.5);
+            }
+            to {
+                text-shadow: 0 0 40px rgba(196, 30, 58, 0.8);
+            }
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 18px;
+            color: #b0b0b0;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .logo {
+            width: 120px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: #c41e3a;
+            color: #fff;
+            border: 2px solid #c41e3a;
+        }
+
+        .btn-primary:hover {
+            background-color: #a01830;
+            border-color: #a01830;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(196, 30, 58, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+
+        .btn-secondary:hover {
+            background-color: #fff;
+            color: #1a1a1a;
+            transform: translateY(-2px);
+        }
+
+        .search-links {
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .search-links h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #c41e3a;
+        }
+
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            text-align: left;
+        }
+
+        .quick-link {
+            padding: 12px 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 5px;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s ease;
+            display: block;
+        }
+
+        .quick-link:hover {
+            background: rgba(196, 30, 58, 0.2);
+            transform: translateX(5px);
+        }
+
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 100px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-404">
+        <img src="/assets/img/logomono.png" alt="Tres Monos Ink Logo" class="logo">
+        
+        <div class="error-code">404</div>
+        
+        <h1>¡Página No Encontrada!</h1>
+        
+        <p>
+            Lo sentimos, la página que buscas no existe o ha sido movida. 
+            Pero no te preocupes, aún puedes encontrar tu próximo tatuaje perfecto.
+        </p>
+        
+        <div class="buttons">
+            <a href="/" class="btn btn-primary">
+                <span>🏠</span> Volver al Inicio
+            </a>
+            <a href="/views/contacto.html" class="btn btn-secondary">
+                <span>📞</span> Contactar
+            </a>
+        </div>
+
+        <div class="search-links">
+            <h2>Enlaces Rápidos</h2>
+            <div class="quick-links">
+                <a href="/views/tattoos.html" class="quick-link">🎨 Galería de Tatuajes</a>
+                <a href="/views/artistas.html" class="quick-link">👨‍🎨 Nuestros Artistas</a>
+                <a href="/views/estudio.html" class="quick-link">🏢 El Estudio</a>
+                <a href="/views/eventos.html" class="quick-link">🎉 Eventos y Bodas</a>
+                <a href="https://wa.me/34644507204" class="quick-link" target="_blank">💬 WhatsApp</a>
+                <a href="https://www.instagram.com/tr3smonosink/" class="quick-link" target="_blank">📸 Instagram</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

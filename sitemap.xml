@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Página Principal -->
+  <url>
+    <loc>https://www.tresmonosink.com/</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.tresmonosink.com/assets/img/logomono.png</image:loc>
+      <image:title>Tres Monos Ink Logo</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Galería de Tatuajes -->
+  <url>
+    <loc>https://www.tresmonosink.com/views/tattoos.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.tresmonosink.com/assets/img/realismo/tatuaje_leon.jpg</image:loc>
+      <image:title>Tatuaje Realista León</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tresmonosink.com/assets/img/blackwork/tatuaje_blackwork.webp</image:loc>
+      <image:title>Tatuaje Blackwork</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tresmonosink.com/assets/img/anime/anime1.webp</image:loc>
+      <image:title>Tatuaje Anime</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Sección Realismo -->
+  <url>
+    <loc>https://www.tresmonosink.com/views/tattoos.html#realismo</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Sección Blackwork -->
+  <url>
+    <loc>https://www.tresmonosink.com/views/tattoos.html#blackwork</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Sección Anime -->
+  <url>
+    <loc>https://www.tresmonosink.com/views/tattoos.html#anime</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Sección Ornamental -->
+  <url>
+    <loc>https://www.tresmonosink.com/views/tattoos.html#ornamental</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Sección Cover -->
+  <url>
+    <loc>https://www.tresmonosink.com/views/tattoos.html#cover</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Sección Línea Fina -->
+  <url>
+    <loc>https://www.tresmonosink.com/views/tattoos.html#linea-fina</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Artistas -->
+  <url>
+    <loc>https://www.tresmonosink.com/views/artistas.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.tresmonosink.com/assets/img/wito2.webp</image:loc>
+      <image:title>Jose Manuel - Tatuador</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tresmonosink.com/assets/img/chicaTattoo6.webp</image:loc>
+      <image:title>Anya Tattoo - Tatuadora</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Jose Manuel -->
+  <url>
+    <loc>https://www.tresmonosink.com/views/jose.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.tresmonosink.com/assets/img/wito2.webp</image:loc>
+      <image:title>Jose Manuel - The Boss</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Anya Tattoo -->
+  <url>
+    <loc>https://www.tresmonosink.com/views/alice.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.tresmonosink.com/assets/img/chicaTattoo6.webp</image:loc>
+      <image:title>Anya Tattoo</image:title>
+    </image:image>
+  </url>
+  
+  <!-- El Estudio -->
+  <url>
+    <loc>https://www.tresmonosink.com/views/estudio.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.tresmonosink.com/assets/img/tienda.avif</image:loc>
+      <image:title>Estudio Tres Monos Ink</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Eventos y Bodas -->
+  <url>
+    <loc>https://www.tresmonosink.com/views/eventos.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.tresmonosink.com/assets/img/eventos/eventos.webp</image:loc>
+      <image:title>Eventos y Bodas</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Contacto -->
+  <url>
+    <loc>https://www.tresmonosink.com/views/contacto.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Política de Privacidad -->
+  <url>
+    <loc>https://www.tresmonosink.com/views/politicasdeprivacidad.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <!-- Aviso Legal -->
+  <url>
+    <loc>https://www.tresmonosink.com/views/avisolegal.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+</urlset>
+

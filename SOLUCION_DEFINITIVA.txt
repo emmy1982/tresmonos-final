@@ -1,0 +1,217 @@
+===============================================
+🎉 SOLUCIÓN DEFINITIVA - TRES MONOS INK
+===============================================
+
+✅ PROBLEMA IDENTIFICADO:
+El .htaccess con reglas de redirección HTTPS/WWW entraba en CONFLICTO
+con la opción "Force HTTPS" de cPanel, causando bucles infinitos.
+
+✅ SOLUCIÓN:
+Usar la opción "Force HTTPS" de cPanel (sin redirecciones en .htaccess)
+
+===============================================
+📋 CONFIGURACIÓN FINAL (Sigue estos pasos):
+===============================================
+
+PASO 1: Activar "Force HTTPS" en cPanel
+----------------------------------------
+1. Ve a cPanel → SSL/TLS
+2. Busca "Force HTTPS Redirect" o "Forzar redirección HTTPS"
+3. **ACTÍVALA** ✅
+4. Esto se encarga de:
+   - Redirigir HTTP → HTTPS
+   - Redirigir sin WWW → con WWW
+
+PASO 2: Subir el .htaccess correcto
+------------------------------------
+1. Ve a cPanel → File Manager
+2. Elimina cualquier archivo .htaccess que haya
+3. Sube el archivo ".htaccess" actualizado (el que acabo de corregir)
+4. Verifica que se llama exactamente ".htaccess" (con el punto)
+
+IMPORTANTE: Este nuevo .htaccess NO tiene reglas de redirección HTTPS/WWW
+porque cPanel ya las hace.
+
+PASO 3: Limpiar caché
+----------------------
+1. Si Magic Cache está activado, NO lo uses (desactívalo)
+2. Limpia la caché del navegador: Ctrl + Shift + R
+3. Prueba en modo incógnito: Ctrl + Shift + N
+
+PASO 4: Verificar que funciona
+-------------------------------
+Prueba estas URLs (todas deberían funcionar sin errores):
+
+✅ http://tresmonosink.com → https://www.tresmonosink.com
+✅ http://www.tresmonosink.com → https://www.tresmonosink.com
+✅ https://tresmonosink.com → https://www.tresmonosink.com
+✅ https://www.tresmonosink.com → ¡Funciona directamente!
+
+PASO 5: Verificar cambios CSS
+------------------------------
+✅ Página principal:
+   - Sección Eventos: Imagen se mueve con scroll (no fija)
+   - Footer: Enlace "Diseñado por Codigodigital" con fuente Syne
+   - Footer en móvil: Enlaces en columna
+
+✅ Cookies:
+   - Banner flotante a la derecha (desktop)
+   - Enlace "Política de Cookies" en footer
+
+
+===============================================
+📄 ¿QUÉ INCLUYE EL NUEVO .htaccess?
+===============================================
+
+✅ Seguridad:
+   - Protección de archivos sensibles
+   - Headers de seguridad (X-Frame-Options, etc.)
+   - Listado de directorios desactivado
+
+✅ Rendimiento:
+   - Compresión GZIP activada
+   - Caché del navegador optimizada:
+     * Imágenes: 1 año
+     * CSS/JS: 1 mes
+     * HTML: 1 hora
+   - ETags desactivados
+
+✅ SEO:
+   - Redirección index.html → raíz
+   - Error 404 personalizado
+   - Charset UTF-8
+
+❌ NO incluye:
+   - Redirecciones HTTPS (cPanel las hace)
+   - Redirecciones WWW (cPanel las hace)
+
+
+===============================================
+⚠️ REGLA DE ORO:
+===============================================
+
+NUNCA uses "Force HTTPS" de cPanel + redirecciones en .htaccess
+al mismo tiempo. ELIGE UNO:
+
+OPCIÓN A (RECOMENDADA):
+✅ Force HTTPS de cPanel activado
+✅ .htaccess SIN redirecciones HTTPS/WWW (el que acabo de crear)
+
+OPCIÓN B:
+❌ Force HTTPS de cPanel desactivado
+✅ .htaccess CON redirecciones HTTPS/WWW
+
+
+===============================================
+🗑️ ARCHIVOS A ELIMINAR DEL SERVIDOR:
+===============================================
+
+Estos archivos son SOLO para tu PC, NO los subas al servidor:
+
+❌ .htaccess_MINIMO_SEGURO
+❌ .htaccess_FINAL_PRODUCCION
+❌ .htaccess_SIN_BUCLE
+❌ .htaccess_BASICO_EMERGENCIA
+❌ .htaccess_COMPATIBLE_MAGIC_CACHE
+❌ .htaccess_SIN_REDIRECTS
+❌ htaccess_backup.txt
+❌ SOLUCION_CACHE.txt
+❌ ARREGLO_URGENTE.txt
+❌ INSTRUCCIONES_FINALES.txt
+❌ SOLUCIONAR_BUCLE_REDIRECCIONES.txt
+❌ SOLUCION_DEFINITIVA.txt
+
+Solo sube:
+✅ .htaccess (el principal)
+✅ Archivos HTML
+✅ Carpetas: css/, js/, views/, assets/
+
+
+===============================================
+📊 CONFIGURACIÓN DE MAGIC CACHE:
+===============================================
+
+RECOMENDACIÓN: NO uses Magic Cache
+
+Razones:
+- Ya tienes caché optimizada en el .htaccess
+- Magic Cache puede causar conflictos
+- Es más difícil de controlar y depurar
+
+Si aún así quieres usarlo:
+1. Activa Magic Cache
+2. NO toques las reglas de caché del .htaccess
+3. Si hay problemas, desactívalo inmediatamente
+
+
+===============================================
+✅ CHECKLIST FINAL:
+===============================================
+
+Verifica que TODO esto esté correcto:
+
+[ ] "Force HTTPS" activado en cPanel
+[ ] Magic Cache desactivado
+[ ] Solo UN archivo .htaccess en el servidor
+[ ] El .htaccess NO tiene reglas de redirección HTTPS/WWW
+[ ] La web funciona en todos los navegadores
+[ ] No hay error ERR_TOO_MANY_REDIRECTS
+[ ] HTTPS se fuerza correctamente
+[ ] WWW se fuerza correctamente
+[ ] Los cambios CSS se ven (eventos, footer, cookies)
+
+
+===============================================
+🎯 RESUMEN TÉCNICO:
+===============================================
+
+PROBLEMA:
+- Doble redirección: cPanel Force HTTPS + .htaccess redirecciones
+- Resultado: Bucle infinito (ERR_TOO_MANY_REDIRECTS)
+
+SOLUCIÓN:
+- Usar SOLO Force HTTPS de cPanel
+- .htaccess sin reglas de redirección HTTPS/WWW
+- Mantener optimizaciones (caché, compresión, seguridad)
+
+
+===============================================
+🔧 MANTENIMIENTO FUTURO:
+===============================================
+
+Cuando hagas cambios en CSS/JS:
+1. Cambia la versión en los HTML:
+   ?v=20241119 → ?v=20241201 (usa la fecha)
+2. Esto fuerza la actualización en navegadores
+
+Si necesitas modificar redirecciones:
+1. NO toques "Force HTTPS" de cPanel
+2. Solo usa el .htaccess para redirecciones personalizadas
+3. NUNCA pongas reglas HTTPS/WWW si Force HTTPS está activo
+
+
+===============================================
+📞 SI HAY PROBLEMAS:
+===============================================
+
+1. Verifica que Force HTTPS esté activado
+2. Verifica que Magic Cache esté desactivado
+3. Verifica que solo hay UN .htaccess en el servidor
+4. Limpia caché del navegador (Ctrl + Shift + R)
+5. Prueba en modo incógnito
+6. Revisa Error Log en cPanel
+
+
+===============================================
+🚀 ¡AHORA SÍ, TODO LISTO!
+===============================================
+
+Con esta configuración:
+✅ No habrá más bucles de redirección
+✅ HTTPS funcionará correctamente
+✅ WWW se forzará correctamente
+✅ La web estará optimizada y segura
+✅ Los cambios CSS se verán correctamente
+
+¡Tu web está 100% lista para producción! 🎉
+

@@ -1,0 +1,32 @@
+# .htaccess MÍNIMO SEGURO
+# Sin redirecciones que puedan causar bucles
+
+# Prevenir listado de directorios
+Options -Indexes
+
+# Proteger archivos sensibles
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Compresión GZIP
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/x-javascript text/xml application/xml text/plain
+</IfModule>
+
+# Sin caché para desarrollo
+<IfModule mod_headers.c>
+    <FilesMatch "\.(css|js|html)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires "0"
+    </FilesMatch>
+</IfModule>
+
+# Charset
+AddDefaultCharset UTF-8
+
+# Error 404
+ErrorDocument 404 /404.html
+

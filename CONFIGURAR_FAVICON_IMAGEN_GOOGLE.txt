@@ -1,0 +1,282 @@
+===============================================
+🖼️ CONFIGURAR FAVICON E IMAGEN EN GOOGLE
+===============================================
+
+Has preguntado sobre:
+1. El icono (favicon) que no aparece en el buscador
+2. La imagen de la camiseta que sale en lugar del logo
+
+===============================================
+✅ SOLUCIÓN 1: FAVICON (Icono del sitio)
+===============================================
+
+El favicon es el pequeño icono que aparece:
+- En la pestaña del navegador
+- En los resultados de búsqueda de Google
+- En los marcadores/favoritos
+
+PASO 1: Verificar que los archivos están en el servidor
+--------------------------------------------------------
+Los archivos del favicon DEBEN estar en la RAÍZ del servidor
+(mismo nivel que index.html):
+
+✅ favicon.ico
+✅ favicon-16x16.png
+✅ favicon-32x32.png
+✅ favicon-96x96.png
+✅ apple-icon.png
+✅ android-icon-192x192.png
+✅ (y todos los demás archivos favicon-* que tienes)
+
+PASO 2: Verificar que funcionan
+--------------------------------
+Visita estas URLs en tu navegador:
+
+https://www.tresmonosink.com/favicon.ico
+https://www.tresmonosink.com/favicon-32x32.png
+https://www.tresmonosink.com/apple-icon.png
+
+¿Ves las imágenes? → ✅ Están bien subidas
+¿Error 404? → ❌ Necesitas subirlas al servidor
+
+PASO 3: Limpiar caché del navegador
+------------------------------------
+1. Presiona: Ctrl + Shift + Delete
+2. Marca "Imágenes y archivos en caché"
+3. Borra todo
+4. Recarga la web: Ctrl + Shift + R
+5. ¿Ves el favicon en la pestaña? → ✅ Funciona
+
+PASO 4: Forzar a Google a actualizar (IMPORTANTE)
+--------------------------------------------------
+Google tarda en actualizar el favicon. Tienes que forzarlo:
+
+1. Ve a Google Search Console:
+   https://search.google.com/search-console
+
+2. Selecciona tu propiedad (www.tresmonosink.com)
+
+3. Haz clic en "Inspeccionar URL" (arriba)
+
+4. Escribe: https://www.tresmonosink.com
+
+5. Haz clic en "Solicitar indexación"
+
+6. Espera 24-48 horas
+
+7. Google actualizará el favicon en los resultados
+
+
+NOTA IMPORTANTE sobre el favicon:
+----------------------------------
+- Google puede tardar DÍAS o SEMANAS en actualizar el favicon
+- Es normal que no aparezca inmediatamente
+- Mientras tanto, seguirá apareciendo el icono genérico (🌐)
+
+
+===============================================
+✅ SOLUCIÓN 2: IMAGEN EN RESULTADOS DE GOOGLE
+===============================================
+
+La imagen que aparece en Google (actualmente la camiseta)
+es elegida automáticamente por Google desde tu web.
+
+CAMBIO REALIZADO:
+-----------------
+He cambiado la imagen Open Graph de:
+❌ logomono.png (logo)
+✅ tresmonosink_tatuador.jpg (imagen del tatuador)
+
+Esta imagen es más apropiada porque:
+- Es más grande y llamativa
+- Muestra tu trabajo (tatuajes)
+- Es más atractiva visualmente
+- Google prefiere imágenes horizontales de 1200x630px
+
+
+¿CÓMO ELIGE GOOGLE LA IMAGEN?
+------------------------------
+Google elige automáticamente basándose en:
+1. Meta tag og:image (que acabamos de configurar)
+2. Imágenes grandes y relevantes de la página
+3. Imágenes que considera más representativas
+
+IMPORTANTE: Google NO siempre usa la imagen que tú configuras.
+A veces ignora el og:image y elige otra automáticamente.
+
+
+PASO 1: Subir el index.html actualizado
+----------------------------------------
+1. Sube el archivo index.html al servidor
+2. Reemplaza el actual
+3. Verifica que se subió correctamente
+
+
+PASO 2: Probar la imagen Open Graph
+------------------------------------
+Usa esta herramienta para ver si funciona:
+
+Facebook Debugger:
+https://developers.facebook.com/tools/debug/
+
+1. Pega: https://www.tresmonosink.com
+2. Haz clic en "Depurar"
+3. ¿Ves la imagen del tatuador? → ✅ Funciona
+4. Si no, haz clic en "Volver a extraer"
+
+
+PASO 3: Forzar a Google a actualizar
+-------------------------------------
+1. Ve a Google Search Console
+2. Inspecciona la URL: https://www.tresmonosink.com
+3. Haz clic en "Solicitar indexación"
+4. Espera 1-2 semanas (sí, puede tardar tanto)
+
+
+PASO 4: Crear una imagen optimizada (OPCIONAL)
+-----------------------------------------------
+Si quieres una imagen perfecta para Google:
+
+Tamaño ideal: 1200 x 630 píxeles (formato horizontal)
+Peso: Menos de 300 KB
+Formato: JPG o PNG
+
+Puedes crear una imagen con:
+- Logo de Tres Monos Ink
+- Texto: "Estudio de Tatuajes en Granada, Atarfe"
+- Foto de un tatuaje destacado
+- Colores de tu marca
+
+
+===============================================
+🔍 ¿POR QUÉ GOOGLE MUESTRA LA CAMISETA?
+===============================================
+
+Google puede estar mostrando la camiseta porque:
+
+1. Es la imagen más grande/visible de tu web
+2. Google considera que es más representativa
+3. El logo era muy pequeño
+4. Google aún no ha indexado el cambio
+5. El algoritmo de Google decidió ignorar el og:image
+
+
+¿SE PUEDE FORZAR A GOOGLE?
+---------------------------
+NO al 100%. Google decide qué imagen mostrar.
+
+Pero puedes INFLUIR:
+✅ Configurar og:image correctamente (ya hecho)
+✅ Usar imágenes grandes y de calidad
+✅ Poner la imagen importante al inicio de la página
+✅ Solicitar indexación en Search Console
+✅ Tener paciencia (puede tardar semanas)
+
+
+===============================================
+⏰ TIEMPOS DE ACTUALIZACIÓN:
+===============================================
+
+Favicon en navegador:
+- Inmediato (con Ctrl + Shift + R)
+
+Favicon en Google:
+- 1-2 semanas (a veces más)
+
+Imagen Open Graph:
+- Facebook/Twitter: 1-7 días
+- Google: 1-4 semanas (a veces más)
+
+IMPORTANTE: Google actualiza cuando quiere, no puedes forzarlo 100%.
+
+
+===============================================
+✅ CHECKLIST FINAL:
+===============================================
+
+Para el Favicon:
+[ ] Archivos favicon subidos a la raíz del servidor
+[ ] Verificar URLs directas (favicon.ico, favicon-32x32.png)
+[ ] Limpiar caché del navegador
+[ ] Solicitar indexación en Google Search Console
+[ ] Esperar 1-2 semanas
+
+Para la Imagen:
+[ ] index.html actualizado con la nueva imagen (tresmonosink_tatuador.jpg)
+[ ] Subir index.html al servidor
+[ ] Probar con Facebook Debugger
+[ ] Solicitar indexación en Google Search Console
+[ ] Esperar 1-4 semanas
+
+
+===============================================
+🎨 ALTERNATIVA: Crear imagen personalizada
+===============================================
+
+Si quieres una imagen PERFECTA para Google, puedes crear una con:
+
+Herramientas online:
+- Canva (gratis): https://www.canva.com
+- Photopea (gratis): https://www.photopea.com
+
+Tamaño: 1200 x 630 píxeles
+
+Contenido sugerido:
+1. Logo de Tres Monos Ink (arriba)
+2. Texto: "Estudio de Tatuajes en Granada, Atarfe"
+3. Foto de un tatuaje impresionante (centro)
+4. Fondo con los colores de tu marca
+
+Cuando la tengas:
+1. Súbela a: assets/img/og-image.jpg
+2. Cambia en index.html:
+   og:image → https://www.tresmonosink.com/assets/img/og-image.jpg
+
+
+===============================================
+📞 RESUMEN RÁPIDO:
+===============================================
+
+1. ✅ Verifica que los archivos favicon están en el servidor
+2. ✅ Sube el index.html actualizado (con la nueva imagen)
+3. ✅ Solicita indexación en Google Search Console
+4. ✅ Espera 1-2 semanas para el favicon
+5. ✅ Espera 1-4 semanas para la imagen
+6. ⏰ Ten paciencia: Google actualiza lentamente
+
+
+===============================================
+❓ PREGUNTAS FRECUENTES:
+===============================================
+
+P: ¿Por qué tarda tanto Google?
+R: Google indexa millones de páginas. No es prioritario actualizar
+   imágenes y favicons rápidamente.
+
+P: ¿Puedo acelerar el proceso?
+R: Solo un poco. Solicitar indexación ayuda, pero no lo garantiza.
+
+P: ¿Y si Google sigue mostrando la camiseta?
+R: Es decisión de Google. Puedes crear una imagen mejor
+   (1200x630px) y configurarla como og:image.
+
+P: ¿El favicon afecta al SEO?
+R: No directamente, pero mejora la apariencia profesional
+   y el reconocimiento de marca.
+
+
+===============================================
+🚀 CONCLUSIÓN:
+===============================================
+
+He actualizado tu index.html para usar la imagen del tatuador
+en lugar del logo. Esto debería mejorar cómo se ve en Google.
+
+Pasos siguientes:
+1. Sube el index.html al servidor
+2. Verifica que los favicons estén subidos
+3. Solicita indexación en Google Search Console
+4. Espera pacientemente (puede tardar semanas)
+
+¡Google actualizará la imagen cuando reindexe tu sitio!
+

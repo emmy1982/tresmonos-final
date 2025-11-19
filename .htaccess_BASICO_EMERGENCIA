@@ -1,0 +1,29 @@
+# .htaccess BÁSICO DE EMERGENCIA
+# Usar solo si el .htaccess principal causa problemas
+
+RewriteEngine On
+RewriteBase /
+
+# Forzar HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Forzar WWW
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Compresión GZIP
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/x-javascript text/xml application/xml application/rss+xml text/plain
+</IfModule>
+
+# Seguridad básica
+Options -Indexes
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Charset
+AddDefaultCharset UTF-8
+

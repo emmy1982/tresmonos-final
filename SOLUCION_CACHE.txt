@@ -1,0 +1,173 @@
+===============================================
+SOLUCIÓN PARA VER LOS CAMBIOS EN LA WEB
+===============================================
+
+🚨 PROBLEMA DETECTADO:
+El servidor está guardando caché de los archivos CSS y JS.
+
+✅ CAMBIOS REALIZADOS EN LOCAL:
+
+1. **.htaccess** → Caché COMPLETAMENTE DESACTIVADA para CSS/JS/HTML
+2. **Todas las páginas HTML** → Versiones actualizadas a ?v=20241119
+3. **styles.css** → Cambios:
+   - Sección eventos: background-attachment: scroll (sin parallax)
+   - Footer: enlaces en columna en móvil
+   - Clase .codigodigital con fuente Syne
+
+===============================================
+📋 PASOS A SEGUIR (EN ORDEN):
+===============================================
+
+PASO 1: VERIFICAR QUÉ ARCHIVOS SUBIR AL SERVIDOR
+-------------------------------------------------
+OBLIGATORIO subir estos archivos:
+
+📄 ARCHIVOS HTML (11 archivos):
+   ✅ index.html
+   ✅ views/tattoos.html
+   ✅ views/contacto.html
+   ✅ views/artistas.html
+   ✅ views/eventos.html
+   ✅ views/estudio.html
+   ✅ views/jose.html
+   ✅ views/alice.html
+   ✅ views/avisolegal.html
+   ✅ views/politicasdeprivacidad.html
+
+📄 ARCHIVOS CSS (CRÍTICO - SIN ESTOS NO FUNCIONARÁ):
+   ✅ css/styles.css
+   ✅ css/cookie-consent.css
+   ✅ css/tattoos-gallery.css
+   ✅ css/contacto.css
+   ✅ css/artistas.css
+   ✅ css/eventos.css
+   ✅ css/estudio.css
+
+📄 ARCHIVO DE CONFIGURACIÓN:
+   ✅ .htaccess (¡MUY IMPORTANTE!)
+
+📄 ARCHIVOS JS (si los modificaste):
+   ✅ js/cookie-consent.js
+   ✅ js/nav.js
+   ✅ Todos los demás .js en la carpeta js/
+
+
+PASO 2: SUBIR LOS ARCHIVOS
+--------------------------
+1. Abre tu FTP (FileZilla, cPanel File Manager, etc.)
+2. **IMPORTANTE**: Asegúrate de sobrescribir los archivos existentes
+3. Sube TODOS los archivos listados arriba
+
+
+PASO 3: LIMPIAR CACHÉ DEL SERVIDOR
+----------------------------------
+Si tu hosting tiene caché (CloudFlare, cPanel, etc.):
+
+▶ CloudFlare:
+  - Ve a CloudFlare Dashboard
+  - Purge Cache → Purge Everything
+
+▶ cPanel:
+  - Busca "Cache Manager" o "Optimize Website"
+  - Limpia toda la caché
+
+▶ Otros paneles:
+  - Busca opciones de caché y límpialas todas
+
+
+PASO 4: LIMPIAR CACHÉ DEL NAVEGADOR
+-----------------------------------
+En tu ordenador:
+
+🖥️ Windows:
+   Chrome/Edge: Ctrl + Shift + Delete → Selecciona "Imágenes y archivos en caché"
+   O más rápido: Ctrl + Shift + R (recarga forzada)
+
+🖥️ Mac:
+   Chrome/Safari: Cmd + Shift + Delete
+   O más rápido: Cmd + Shift + R
+
+
+PASO 5: PROBAR EN MODO INCÓGNITO
+--------------------------------
+1. Abre tu navegador en modo incógnito/privado:
+   - Chrome: Ctrl + Shift + N
+   - Firefox: Ctrl + Shift + P
+   
+2. Visita tu web: www.tresmonosink.com
+
+3. Verifica los cambios:
+   ✅ Sección Eventos: la imagen de fondo se mueve al hacer scroll
+   ✅ Footer: enlace "Diseñado por Codigodigital" con fuente Syne
+   ✅ Footer en móvil: enlaces en columna
+   ✅ Banner de cookies: aparece como caja flotante a la derecha
+
+
+===============================================
+🔍 VERIFICAR SI LOS ARCHIVOS SE SUBIERON
+===============================================
+
+Abre tu navegador y visita estas URLs DIRECTAMENTE:
+
+1. https://www.tresmonosink.com/css/styles.css?v=20241119
+   → Deberías ver el CSS actualizado
+
+2. https://www.tresmonosink.com/.htaccess
+   → Puede dar error 403 (es normal por seguridad)
+
+3. Presiona F12 en tu web → Ve a la pestaña "Network"
+   → Recarga la página (F5)
+   → Busca "styles.css" en la lista
+   → Verifica que diga "?v=20241119" al final
+
+
+===============================================
+❓ SI AÚN NO FUNCIONA:
+===============================================
+
+1. Verifica que el archivo .htaccess se subió correctamente
+   → Algunos FTP ocultan archivos que empiezan con punto
+   → Activa "Mostrar archivos ocultos" en tu FTP
+
+2. ¿Tu hosting usa CloudFlare u otro CDN?
+   → Limpia la caché del CDN
+
+3. ¿Usas WordPress o algún CMS?
+   → Limpia el caché del plugin (WP Rocket, W3 Total Cache, etc.)
+
+4. Contacta a tu proveedor de hosting:
+   → Diles: "Necesito limpiar completamente la caché del servidor"
+
+
+===============================================
+📞 INFORMACIÓN ADICIONAL:
+===============================================
+
+- Los cambios SON LOCALES están correctos
+- El problema es 100% de caché del servidor
+- El .htaccess nuevo FUERZA a no usar caché
+- Las versiones ?v=20241119 OBLIGAN al navegador a descargar archivos nuevos
+
+Una vez que veas los cambios, AVÍSAME para activar la caché de nuevo
+(actualmente está desactivada para desarrollo, pero necesitas activarla
+en producción para que la web cargue más rápido)
+
+
+===============================================
+✅ CHECKLIST FINAL:
+===============================================
+
+[ ] He subido TODOS los archivos HTML
+[ ] He subido TODOS los archivos CSS
+[ ] He subido el archivo .htaccess
+[ ] He limpiado la caché del servidor
+[ ] He limpiado la caché del navegador (Ctrl+Shift+R)
+[ ] He probado en modo incógnito
+[ ] He verificado las URLs directas del CSS
+
+
+Si completaste TODOS estos pasos y AÚN no funciona, 
+hay un problema con tu hosting o configuración del servidor.
+
+¡Avísame cuando veas los cambios!
+

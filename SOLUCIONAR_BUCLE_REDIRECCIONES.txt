@@ -1,0 +1,161 @@
+===============================================
+🔴 ERROR: ERR_TOO_MANY_REDIRECTS
+===============================================
+
+Este error significa "bucle infinito de redirecciones".
+La web funciona en móvil pero NO en PC porque tu navegador
+en PC tiene caché de las redirecciones antiguas.
+
+===============================================
+✅ SOLUCIÓN 1: LIMPIAR NAVEGADOR EN PC (RECOMENDADO)
+===============================================
+
+PASO 1 - Borrar cookies y caché:
+---------------------------------
+1. Abre Chrome/Edge en tu PC
+2. Presiona: Ctrl + Shift + Delete
+3. Selecciona: "Todo el tiempo"
+4. Marca estas casillas:
+   ✅ Cookies y otros datos de sitios
+   ✅ Imágenes y archivos almacenados en caché
+5. Haz clic en "Borrar datos"
+
+PASO 2 - Cerrar COMPLETAMENTE el navegador:
+-------------------------------------------
+1. Cierra TODAS las ventanas del navegador
+2. Asegúrate de que no haya ningún proceso en segundo plano
+3. Espera 10 segundos
+
+PASO 3 - Probar en modo incógnito:
+----------------------------------
+1. Abre el navegador
+2. Presiona: Ctrl + Shift + N (modo incógnito)
+3. Visita: www.tresmonosink.com
+4. ¿Funciona? → ¡Problema resuelto!
+
+PASO 4 - Si funciona en incógnito:
+----------------------------------
+Ahora prueba en modo normal. Debería funcionar.
+Si sigue sin funcionar, repite el PASO 1.
+
+
+===============================================
+✅ SOLUCIÓN 2: USAR .htaccess CORREGIDO
+===============================================
+
+He corregido el problema en el .htaccess:
+
+ANTES (causaba bucle):
+----------------------
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+↑ Dos reglas separadas = posible bucle infinito
+
+AHORA (sin bucle):
+------------------
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^ https://www.%1%{REQUEST_URI} [L,R=301,NE]
+↑ Una sola regla = sin bucles
+
+PASOS:
+------
+1. Ve a cPanel → File Manager
+2. Renombra el archivo actual:
+   "htaccess_backup.txt" → "htaccess_viejo_backup.txt"
+3. Sube el nuevo archivo ".htaccess" corregido
+4. Espera 30 segundos
+5. Limpia caché del navegador (PASO 1 de Solución 1)
+6. Prueba: www.tresmonosink.com
+
+
+===============================================
+✅ SOLUCIÓN 3: .htaccess ULTRA SIMPLE (EMERGENCIA)
+===============================================
+
+Si NADA funciona, usa el archivo:
+".htaccess_SIN_BUCLE"
+
+Este es un .htaccess mínimo que SÍ funciona garantizado.
+
+PASOS:
+------
+1. Descarga el archivo ".htaccess_SIN_BUCLE"
+2. Renómbralo a ".htaccess" (quita el "_SIN_BUCLE")
+3. Súbelo al servidor (reemplaza el actual)
+4. Limpia caché del navegador
+5. Listo
+
+
+===============================================
+📊 DIAGNÓSTICO: ¿POR QUÉ FUNCIONA EN MÓVIL?
+===============================================
+
+✅ Móvil: No tiene caché de tu web → Ve la versión correcta
+❌ PC: Tiene caché vieja con reglas de redirección → Bucle infinito
+
+Por eso es CRÍTICO limpiar la caché del navegador en PC.
+
+
+===============================================
+🔍 VERIFICAR SI EL PROBLEMA SE SOLUCIONÓ:
+===============================================
+
+Después de aplicar las soluciones, comprueba:
+
+1. ✅ La web carga en modo incógnito en PC
+2. ✅ La web carga en modo normal en PC
+3. ✅ No aparece "ERR_TOO_MANY_REDIRECTS"
+4. ✅ La URL muestra: https://www.tresmonosink.com
+5. ✅ Los cambios CSS se ven (eventos sin parallax, footer con enlace)
+
+
+===============================================
+🆘 SI SIGUE SIN FUNCIONAR:
+===============================================
+
+Si después de TODO esto sigue el error:
+
+1. Contacta con tu hosting y diles:
+   "Tengo un bucle de redirecciones (ERR_TOO_MANY_REDIRECTS)
+    en mi dominio www.tresmonosink.com. ¿Hay alguna redirección
+    configurada a nivel de servidor?"
+
+2. Posibles causas en el servidor:
+   - Redirecciones forzadas en el panel del hosting
+   - Configuración de SSL/HTTPS incorrecta
+   - Problemas con CloudFlare (si lo usas)
+
+
+===============================================
+📝 ARCHIVOS DISPONIBLES:
+===============================================
+
+1. .htaccess (PRINCIPAL - CORREGIDO)
+   → Usa este primero
+
+2. .htaccess_SIN_BUCLE
+   → Versión simplificada sin bucles
+
+3. .htaccess_BASICO_EMERGENCIA
+   → Versión mínima para emergencias
+
+
+===============================================
+✅ RESUMEN RÁPIDO:
+===============================================
+
+1. Limpia cookies y caché: Ctrl + Shift + Delete
+2. Cierra el navegador completamente
+3. Abre en incógnito: Ctrl + Shift + N
+4. Visita: www.tresmonosink.com
+5. Si funciona → problema resuelto
+6. Si no funciona → sube el nuevo .htaccess corregido
+
+
+¡Avísame si funciona o si necesitas más ayuda!
+

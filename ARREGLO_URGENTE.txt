@@ -1,0 +1,110 @@
+===============================================
+🚨 ARREGLO URGENTE - LA WEB NO SE VE
+===============================================
+
+✅ SOLUCIÓN RÁPIDA:
+
+He corregido el archivo .htaccess para que sea compatible con Magic Cache de cPanel.
+
+📋 PASOS INMEDIATOS:
+
+1. **SUBE EL NUEVO .htaccess AL SERVIDOR**
+   - Ve a cPanel → File Manager
+   - Busca el archivo .htaccess en la raíz
+   - Súbelo y reemplázalo
+   - **¡IMPORTANTE!** Asegúrate de que se llama exactamente ".htaccess" (con el punto al inicio)
+
+2. **ESPERA 1 MINUTO**
+   - Deja que el servidor procese los cambios
+
+3. **LIMPIA LA CACHÉ DEL NAVEGADOR**
+   - Presiona: Ctrl + Shift + R (Windows)
+   - O: Cmd + Shift + R (Mac)
+
+4. **PRUEBA LA WEB**
+   - Visita: www.tresmonosink.com
+   - Debería cargarse normalmente ahora
+
+
+===============================================
+❓ SI LA WEB SIGUE SIN VERSE:
+===============================================
+
+OPCIÓN A - Verificar errores del servidor:
+------------------------------------------
+1. Ve a cPanel → Error Log (o Registro de Errores)
+2. Mira si hay errores recientes
+3. Copia el error y me lo mandas
+
+OPCIÓN B - Desactivar temporalmente .htaccess:
+----------------------------------------------
+1. En cPanel → File Manager
+2. Busca el archivo .htaccess
+3. Renómbralo temporalmente a "htaccess_backup.txt"
+4. Recarga la web
+5. Si funciona, el problema está en el .htaccess
+
+
+OPCIÓN C - Verificar Magic Cache:
+---------------------------------
+1. Ve a cPanel → Magic Cache
+2. Asegúrate de que esté ACTIVADO
+3. Si está desactivado, actívalo
+4. Limpia la caché de nuevo
+
+
+===============================================
+🔍 DIAGNÓSTICO: ¿QUÉ VES EXACTAMENTE?
+===============================================
+
+Dime qué ves cuando intentas entrar a www.tresmonosink.com:
+
+[ ] Página completamente en blanco
+[ ] Error 500 (Internal Server Error)
+[ ] Error 403 (Forbidden)
+[ ] Error 404 (Not Found)
+[ ] La página carga pero sin estilos (solo texto)
+[ ] Otro error: _________________
+
+
+===============================================
+📞 INFORMACIÓN TÉCNICA
+===============================================
+
+Cambios en el .htaccess corregido:
+- ✅ CSS/JS: Caché de 5 minutos (compatible con Magic Cache)
+- ✅ HTML: Sin caché (para ver cambios inmediatos)
+- ✅ Imágenes: Caché normal (1 año)
+- ✅ Eliminadas reglas conflictivas con cPanel
+
+
+===============================================
+⚡ SOLUCIÓN MÁS RÁPIDA SI NADA FUNCIONA:
+===============================================
+
+Si NADA de lo anterior funciona, haz esto:
+
+1. Descarga este .htaccess básico y súbelo:
+
+```apache
+# Redirección HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirección WWW
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Compresión
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript
+</IfModule>
+```
+
+2. Guárdalo como ".htaccess" y súbelo
+3. La web debería funcionar inmediatamente
+
+
+¡AVÍSAME QUÉ PASA!
+

@@ -47,12 +47,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@400;500;700&family=Oswald:wght@400;500;700&family=Permanent+Marker&family=The+Nautigal:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@400;500;700&family=Oswald:wght@400;500;700&family=Permanent+Marker&family=The+Nautigal:wght@400;700&family=Syne:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/cookie-consent.css">
 
 </head>
 
@@ -349,10 +350,65 @@
                 <div class="footer-bottom-links">
                     <a href="./politicasdeprivacidad.html">Política de Privacidad</a>
                     <a href="./avisolegal.html">Aviso Legal</a>
+                    <a href="#" id="open-cookie-settings">Política de Cookies</a>
+                    <a href="https://emmy1982.github.io/portfolioEmilio/" target="_blank" rel="noopener">Diseñado por <span class="codigodigital">Codigodigital</span></a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- ===== BANNER DE COOKIES ===== -->
+    <div id="cookie-consent-banner" class="cookie-consent-banner">
+        <div class="cookie-consent-container">
+            <div class="cookie-consent-text">
+                <h3>🍪 Usamos Cookies</h3>
+                <p>Utilizamos cookies propias y de terceros para mejorar tu experiencia de navegación, analizar el tráfico del sitio y personalizar el contenido.</p>
+                <p><a href="./politicasdeprivacidad.html" target="_blank">Política de Privacidad</a> | <a href="./politicasdeprivacidad.html#cookies" target="_blank">Política de Cookies</a></p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button id="cookie-accept" class="cookie-btn cookie-btn-accept">Aceptar Todo</button>
+                <button id="cookie-settings" class="cookie-btn cookie-btn-settings">Configurar</button>
+                <button id="cookie-reject" class="cookie-btn cookie-btn-reject">Rechazar</button>
+            </div>
+        </div>
+    </div>
+    <div id="cookie-settings-overlay" class="cookie-settings-overlay"></div>
+    <div id="cookie-settings-panel" class="cookie-settings-panel">
+        <div class="cookie-settings-header">
+            <h2>Configuración de Cookies</h2>
+            <button id="cookie-settings-close" class="cookie-settings-close" aria-label="Cerrar">&times;</button>
+        </div>
+        <div class="cookie-settings-content">
+            <p style="margin-bottom: 20px; color: #666; line-height: 1.6;">Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Puedes elegir qué tipo de cookies deseas permitir.</p>
+            <div class="cookie-category">
+                <div class="cookie-category-header">
+                    <h3>🔒 Cookies Necesarias</h3>
+                    <label class="cookie-toggle"><input type="checkbox" id="cookie-necessary" checked disabled><span class="cookie-toggle-slider"></span></label>
+                </div>
+                <p>Estas cookies son esenciales para el funcionamiento del sitio web y no se pueden desactivar.</p>
+                <p class="cookie-toggle-label">Siempre activas</p>
+            </div>
+            <div class="cookie-category">
+                <div class="cookie-category-header">
+                    <h3>📊 Cookies de Analíticas</h3>
+                    <label class="cookie-toggle"><input type="checkbox" id="cookie-analytics"><span class="cookie-toggle-slider"></span></label>
+                </div>
+                <p>Nos ayudan a entender cómo los visitantes interactúan con nuestro sitio web.</p>
+            </div>
+            <div class="cookie-category">
+                <div class="cookie-category-header">
+                    <h3>📢 Cookies de Marketing</h3>
+                    <label class="cookie-toggle"><input type="checkbox" id="cookie-marketing"><span class="cookie-toggle-slider"></span></label>
+                </div>
+                <p>Se utilizan para rastrear a los visitantes y mostrar anuncios relevantes.</p>
+            </div>
+        </div>
+        <div class="cookie-settings-actions">
+            <button id="cookie-save-settings" class="cookie-btn cookie-btn-accept">Guardar Preferencias</button>
+            <button id="cookie-reject-all" class="cookie-btn cookie-btn-reject" onclick="window.cookieConsent.rejectAll(); window.cookieConsent.closeSettings();">Rechazar Todo</button>
+        </div>
+    </div>
+    <div id="cookie-review-badge" class="cookie-review-badge"><i class="fas fa-cookie-bite"></i> Cookies</div>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -360,6 +416,7 @@
     <script src="../js/nav.js"></script>
     <script src="../js/scroll-to-top.js"></script>
     <script src="../js/emailjs-forms.js"></script>
+    <script src="../js/cookie-consent.js"></script>
     <script>
         AOS.init({
             duration: 800,

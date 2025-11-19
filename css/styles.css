@@ -1351,26 +1351,9 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     filter: contrast(0.8) sepia(0.2) saturate(1) brightness(0.8);
     z-index: 0;
-}
-
-/* Mejorar el parallax para navegadores que no soportan background-attachment: fixed */
-.no-parallax-support .events-section::before {
-    background-attachment: scroll;
-    background-size: 120% auto; /* Hacer la imagen más grande para el efecto parallax */
-}
-
-/* Solución para iOS - background-attachment: fixed no funciona */
-@supports (-webkit-touch-callout: none) {
-    .events-section::before {
-        background-attachment: scroll;
-    }
-}
-
-.ios-device .events-section::before {
-    background-attachment: scroll;
 }
 
 .events-content {
@@ -2510,6 +2493,12 @@ footer::before {
     width: 100%;
 }
 
+.codigodigital {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
 .footer-social {
     display: flex;
     gap: 20px;
@@ -3216,11 +3205,13 @@ footer::before {
 
     .footer-bottom-links {
         margin-top: 10px;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 
     .footer-bottom-links a {
-        margin: 0 10px;
+        margin: 0;
     }
 
     .newsletter-form {
